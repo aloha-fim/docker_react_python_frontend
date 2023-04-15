@@ -35,3 +35,13 @@
   font-size: 1.8rem;
   cursor: pointer;
 }
+
+.movie-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+}
+
+.movie-item svg {
+  font-size: 1.2 rem;
+  margin: 16 px 5 px;
+}
