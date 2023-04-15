@@ -54,12 +54,7 @@ function App() {
     setMovies(newMovies);
   }
   const removeClicked = movie => {
-    const newMovies = movies.filter( mov => {
-      if (mov.id === movie.id) {
-        return false;
-      }
-      return true;
-    })
+    const newMovies = movies.filter(mov => mov.id !== movie.id);
     setMovies(newMovies);
   }
 
