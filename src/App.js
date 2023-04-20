@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilm } from '@fortawesome/free-solid-svg-icons';
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import { useCookies}  from 'react-cookie';
+import { useFetch } from './hooks/useFetch';
 
 function App() {
 
@@ -14,18 +15,10 @@ function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [editedMovie, setEditedMovie] = useState(null);
   const [token, setToken, deleteToken] = useCookies(['mr-token']);
+  const [data, loading, error] = useFetch();
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/movies", {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Token ${token['mr-token']}`
-      }
-    })
-    .then( resp => resp.json())
-    .then( resp => setMovies(resp))
-    .catch( error => console.log(error))
+
   }, [])
 
   useEffect( () => {
