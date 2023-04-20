@@ -12,9 +12,9 @@ function useFetch() {
         async function fetchData() {
             setLoading(true);
             setError();
-            const data = await API.getMovies(token)
+            const data = await API.getMovies(token['mr-token'])
             .catch( err => setError(err));
-            setData(data)
+            setData(data);
             setLoading(false);
         }
 
