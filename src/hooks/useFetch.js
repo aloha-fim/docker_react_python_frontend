@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { API } from '../api-service';
-import { useCookies}  from 'react-cookie';
+import { useCookies }  from 'react-cookie';
 
 function useFetch() {
     const [data, setData] = useState([]);
