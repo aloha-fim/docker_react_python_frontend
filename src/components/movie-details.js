@@ -47,16 +47,16 @@ function MovieDetails(props){
             <div>
                 <h1>{mov && mov.title}</h1>
                 <p>{mov && mov.description}</p>
-                <FontAwesomeIcon icon="faStar" className={mov.avg_rating > 0 ? 'orange':''} />
-                <FontAwesomeIcon icon="faStar" className={mov.avg_rating > 1 ? 'orange':''} />
-                <FontAwesomeIcon icon="faStar" className={mov.avg_rating > 2 ? 'orange':''} />
-                <FontAwesomeIcon icon="faStar" className={mov.avg_rating > 3 ? 'orange':''} />
-                <FontAwesomeIcon icon="faStar" className={mov.avg_rating > 4 ? 'orange':''} />
+                <FontAwesomeIcon icon={faStar} className={mov.avg_rating > 0 ? 'orange':''} />
+                <FontAwesomeIcon icon={faStar} className={mov.avg_rating > 1 ? 'orange':''} />
+                <FontAwesomeIcon icon={faStar} className={mov.avg_rating > 2 ? 'orange':''} />
+                <FontAwesomeIcon icon={faStar} className={mov.avg_rating > 3 ? 'orange':''} />
+                <FontAwesomeIcon icon={faStar} className={mov.avg_rating > 4 ? 'orange':''} />
                 ({mov.no_of_rating})
                 <div className="rate-container">
                     <h2>Rate it</h2>
                     { [...Array(5)].map( (e, i) => {
-                        return <FontAwesomeIcon key={i} icon="faStar" className={highlighted > i - 1 ? 'purple':''}
+                        return <FontAwesomeIcon key={i} icon={faStar} className={highlighted > i - 1 ? 'purple':''}
                             onMouseEnter={highlightRate(i)}
                             onMouseLeave={highlightRate(-1)} 
                             onClick={rateClicked(i)}
