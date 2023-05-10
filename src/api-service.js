@@ -1,6 +1,6 @@
 export class API {
     static loginUser(body) {
-        return fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/register/`, {
+        return fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/login/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -9,7 +9,7 @@ export class API {
         }).then( resp => resp.json())     
     }
     static registerUser(body) {
-        return fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/api/users/`, {
+        return fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/register/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
