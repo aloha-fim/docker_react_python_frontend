@@ -1,6 +1,11 @@
 import React from 'react';
 //import ReactDOM from 'react-dom';
-import './index.css';
+//import './index.css';
+
+import "./assets/css/nucleo-icons.css";
+import "./assets/scss/blk-design-system-react.scss";
+import "./assets/demo/demo.css";
+
 import App from './App';
 import Auth from './components/auth';
 //import reportWebVitals from './reportWebVitals';
@@ -8,7 +13,7 @@ import Auth from './components/auth';
 import { Route, BrowserRouter, Routes} from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
 import { createRoot } from 'react-dom/client';
-//npm install cors
+//npm install cors if JS is serverside
 
 /*
 const cors = require('cors');
