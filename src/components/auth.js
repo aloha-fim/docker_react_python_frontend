@@ -85,7 +85,6 @@ function Auth(){
     return (
         <div className="wrapper">
             <div className="page-header">
-                {isLoginView ? <h1>Login</h1> : <h1>Register</h1>}
                 <div className="page-header-image" />
                 <div className="content"></div>
                     <Container>
@@ -107,7 +106,9 @@ function Auth(){
                                             alt="..."
                                             src={require("../assets/img/square-purple-1.png")}
                                         />
-                                        <CardTitle tag="h4">Register</CardTitle>
+                                        <CardTitle tag="h4">
+                                            {isLoginView ? "Login" : "Register"}
+                                        </CardTitle>
                                     </CardHeader>
                                     <CardBody>
                                         <Form className="form">
@@ -126,9 +127,9 @@ function Auth(){
                                             id="username"
                                             type="text"
                                             value={username}
-                                            onChange={ evt=> setUsername(evt.target.value)}
-                                            onFocus={(e) => setUsername(true)}
-                                            onBlur={(e) => setUsername(false)}
+                                            onChange={ evt => setUsername(evt.target.value)}
+                                            //onFocus={(e) => setUsername(true)}
+                                            //onBlur={(e) => setUsername(false)}
                                             />
                                         </InputGroup>
                                         <InputGroup
@@ -146,20 +147,11 @@ function Auth(){
                                             placeholder="password"
                                             type="password"
                                             value={password}
-                                            onChange={ evt=> setPassword(evt.target.value)}
-                                            onFocus={(e) => setPassword(true)}
-                                            onBlur={(e) => setPassword(false)}
+                                            onChange={ evt => setPassword(evt.target.value)}
+                                            //onFocus={(e) => setPassword(true)}
+                                            //onBlur={(e) => setPassword(false)}
                                             />
-                                            <br/>
-                                            {isLoginView ? 
-                                                <button onClick={loginClicked} disabled={isDisabled}>Login</button> :
-                                                <button onClick={registerClicked} disabled={isDisabled}>Register</button>
-                                            } 
 
-                                            { isLoginView ? 
-                                                <p onClick={() => setIsLoginView(false)}>You don't have an account? Register here.</p> :
-                                                <p onClick={() => setIsLoginView(true)}>You already have an account? Login here.</p>
-                                            }
                                         </InputGroup>
                                         <FormGroup check className="text-left">
                                             <Label check>
@@ -172,14 +164,24 @@ function Auth(){
                                                 terms and conditions
                                             </a>
                                             .
+                                            <br></br>
+                                            <br></br>
+                                            { isLoginView ? 
+                                                <p onClick={() => setIsLoginView(false)}>You don't have an account? Register here.</p> :
+                                                <p onClick={() => setIsLoginView(true)}>You already have an account? Login here.</p>
+                                            }
                                             </Label>
                                         </FormGroup>
                                         </Form>
                                     </CardBody>
                                     <CardFooter>
-                                        <Button className="btn-round" color="primary" size="lg">
-                                        Get Started
-                                        </Button>
+
+                                            {isLoginView ? 
+                                                <Button className="btn-round" color="primary" size="lg" onClick={loginClicked} disabled={isDisabled}>Login</Button>
+                                                :
+                                                <Button className="btn-round" color="primary" size="lg" onClick={registerClicked} disabled={isDisabled}>Register</Button>
+                                            } 
+
                                     </CardFooter>
                                     </Card>
                                 </Col>
