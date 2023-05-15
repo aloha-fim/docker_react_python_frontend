@@ -16,7 +16,7 @@ function MovieDetails(props){
     }
 
     const rateClicked = rate => evt => {
-        fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/api/movies/${mov.id}/rate_movie/`, {
+        fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/api/movie/${mov.id}/rating/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ function MovieDetails(props){
     }
 
     const getDetails = () => {
-        fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/api/movies/${mov.id}/`, {
+        fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/api/movie/${mov.id}/`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
