@@ -127,7 +127,7 @@ function Auth(){
                                             id="username"
                                             type="text"
                                             value={username}
-                                            onChange={ evt => setUsername(evt.target.value)}
+                                            onChange={ (e) => setUsername(e.target.value)}
                                             //onFocus={(e) => setUsername(true)}
                                             //onBlur={(e) => setUsername(false)}
                                             />
@@ -147,7 +147,7 @@ function Auth(){
                                             placeholder="password"
                                             type="password"
                                             value={password}
-                                            onChange={ evt => setPassword(evt.target.value)}
+                                            onChange={ (e) => setPassword(e.target.value)}
                                             //onFocus={(e) => setPassword(true)}
                                             //onBlur={(e) => setPassword(false)}
                                             />

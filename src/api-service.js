@@ -1,3 +1,5 @@
+
+
 export class API {
     static loginUser(body) {
         return fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/login/`, {
@@ -18,7 +20,7 @@ export class API {
         }).then( resp => resp.json())     
     }
     static getMovies(token){
-        fetch("https://rest-apis-flask-python-project-avlc.onrender.com/api/movie/", {
+        fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/api/movie/`, {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
