@@ -11,12 +11,12 @@ function MovieDetails(props){
 
     let mov = props.movie;
 
-    const highlightRate = high => evt => {
+    const highlightRate = high => (e) => {
         setHighlighted(high);
     }
 
-    const rateClicked = rate => evt => {
-        fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/api/movie/${mov.id}/rating/`, {
+    const rateClicked = rate => (e) => {
+        fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/api/movie/${mov.id}/rating`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -24,12 +24,12 @@ function MovieDetails(props){
       },
       body: JSON.stringify( {stars: rate + 1} )
     })
-    .then( resp => getDetails())
+    .then( () => getDetails())
     .catch( error => console.log(error))
     }
 
     const getDetails = () => {
-        fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/api/movie/${mov.id}/`, {
+        fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/api/movie/${mov.id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

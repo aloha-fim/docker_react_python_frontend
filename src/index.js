@@ -1,6 +1,7 @@
 import React from 'react';
 //import ReactDOM from 'react-dom';
 //import './index.css';
+import { createRoot } from 'react-dom/client';
 
 import "./assets/css/nucleo-icons.css";
 import "./assets/scss/blk-design-system-react.scss";
@@ -12,7 +13,7 @@ import Auth from './components/auth';
 //import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter, Routes} from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
-import { createRoot } from 'react-dom/client';
+
 //npm install cors if JS is serverside
 
 /*
@@ -39,7 +40,7 @@ function Router() {
         <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Auth/>} />
-          <Route exact path="/movies" element={<App/>} />
+          <Route exact path="/api/movie" element={<App/>} />
         </Routes>
         </BrowserRouter>
       </CookiesProvider>

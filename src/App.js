@@ -87,11 +87,11 @@ function App() {
           />
           <button onClick={newMovie}>New movie</button>
         </div>
-          <MovieDetails movie={selectedMovie} updateMovie={loadMovie}/>
-          { !editedMovie ? 
-          <MovieForm movie={editedMovie} updatedMovie={updatedMovie} movieCreated={movieCreated}/> 
-          : null}
-        </div>
+        <MovieDetails movie={selectedMovie} updateMovie={loadMovie}/>
+        { !editedMovie ? 
+        <MovieForm movie={editedMovie} updatedMovie={updatedMovie} movieCreated={movieCreated}/> 
+        : null}
+      </div>
     </div>
   );
 }
