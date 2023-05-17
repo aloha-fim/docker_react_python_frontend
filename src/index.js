@@ -42,7 +42,6 @@ function Router() {
           <Route exact path="/movies" element={<App/>} />
         </Routes>
         </BrowserRouter>
-        
       </CookiesProvider>
     </React.StrictMode>
 
