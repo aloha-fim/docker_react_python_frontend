@@ -38,7 +38,7 @@ function Auth(){
 
     useEffect( () => {
         console.log(token);
-        if(token['mr-token']) window.location.href = '/movies';
+        if(token['mr-token']) window.location.href = '/api/movie';
         document.body.classList.toggle("register-page");
         document.documentElement.addEventListener("mousemove", followCursor);
         // Specify how to clean up after this effect:
