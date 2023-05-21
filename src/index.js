@@ -40,7 +40,7 @@ function Router() {
         <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Auth/>} />
-          <Route exact path="/api/movie" element={<App/>} />
+          <Route exact path="/movie" element={<App/>} />
         </Routes>
         </BrowserRouter>
       </CookiesProvider>
