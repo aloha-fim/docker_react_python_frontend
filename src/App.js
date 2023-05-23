@@ -77,7 +77,7 @@ function App() {
         </h1>
         <FontAwesomeIcon icon={faSignOutAlt} onClick={logoutUser}/>
       </header>
-      <div className="layout">
+      {/* <div className="layout">
         <div>
           <MovieList 
             movies={movies} 
@@ -91,7 +91,7 @@ function App() {
         { !editedMovie ? 
         <MovieForm movie={editedMovie} updatedMovie={updatedMovie} movieCreated={movieCreated}/> 
         : null}
-      </div>
+      </div> */}
     </div>
   );
 }
