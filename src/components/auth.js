@@ -38,7 +38,7 @@ function Auth(){
 
     useEffect( () => {
         console.log(token);
-        if(token['mr-token']) window.location.href = '/movie';
+        if(token['mr-token']) window.location.href = '/moviemaker';
         document.body.classList.toggle("register-page");
         document.documentElement.addEventListener("mousemove", followCursor);
         // Specify how to clean up after this effect:
@@ -183,9 +183,9 @@ function Auth(){
                                             } 
 
                                     </CardFooter>
-                                    </Card>
-                                </Col>
-                                </Row>
+                                </Card>
+                            </Col>
+                        </Row>
                                 <div className="register-bg" />
                                 <div
                                 className="square square-1"
@@ -217,7 +217,7 @@ function Auth(){
                                 id="square6"
                                 style={{ transform: squares1to6 }}
                                 />
-                            </Container>
+                    </Container>
                         
             </div>
         </div>           

@@ -1,4 +1,5 @@
 import React from 'react';
+//import React, { createContext } from 'react';
 //import ReactDOM from 'react-dom';
 //import './index.css';
 import { createRoot } from 'react-dom/client';
@@ -25,6 +26,8 @@ const corsOptions = {
 }
 */
 
+// const TokenContext = createContext(null)
+
 const container = document.getElementById('root');
 const root = createRoot(container);
 
@@ -38,17 +41,16 @@ function Router() {
     <React.StrictMode>
       <CookiesProvider>
         <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<Auth/>} />
-          <Route exact path="/movie" element={<App/>} />
-        </Routes>
+          <Routes>
+            <Route exact path="/" element={<Auth/>} />
+            <Route exact path="/moviemaker" element={<App/>} />
+          </Routes>
         </BrowserRouter>
       </CookiesProvider>
     </React.StrictMode>
-
   )
 }
-root.render(<Router />);
+root.render(<Router/>);
 
 
 // If you want to start measuring performance in your app, pass a function

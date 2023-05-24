@@ -25,7 +25,7 @@ function App() {
   useEffect( () => {
     console.log(token);
     if(!token['mr-token']) window.location.href = '/';
-}, [token])
+  }, [token])
 
   //const movieClicked = movie => {
   //  //console.log(movie.title)
