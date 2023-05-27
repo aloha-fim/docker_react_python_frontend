@@ -17,15 +17,18 @@ function App() {
   const [token, setToken, deleteToken] = useCookies(['mr-token']);
   const [data, loading, error] = useFetch();
 
+
+
+  useEffect( () => {
+    //setToken(token['mr-token'])
+    console.log(token);
+    if(!token['mr-token']) window.location.href = '/';
+  }, [token])
+
   useEffect(() => {
     //console.log(data);
     setMovies(data);
   }, [data])
-
-  useEffect( () => {
-    console.log(token);
-    if(!token['mr-token']) window.location.href = '/';
-  }, [token])
 
   //const movieClicked = movie => {
   //  //console.log(movie.title)
@@ -77,7 +80,7 @@ function App() {
         </h1>
         <FontAwesomeIcon icon={faSignOutAlt} onClick={logoutUser}/>
       </header>
-      {/* <div className="layout">
+      <div className="layout">
         <div>
           <MovieList 
             movies={movies} 
@@ -91,7 +94,7 @@ function App() {
         { !editedMovie ? 
         <MovieForm movie={editedMovie} updatedMovie={updatedMovie} movieCreated={movieCreated}/> 
         : null}
-      </div> */}
+      </div>
     </div>
   );
 }

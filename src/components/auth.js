@@ -35,7 +35,7 @@ function Auth(){
     const [ isLoginView, setIsLoginView ] = useState(true);
 
     const [token, setToken] = useCookies(['mr-token']);
-
+   
     useEffect( () => {
         console.log(token);
         if(token['mr-token']) window.location.href = '/moviemaker';
@@ -70,7 +70,7 @@ function Auth(){
 
     const loginClicked = () => {
         API.loginUser({username, password}) 
-            .then( resp => setToken('mr-token', resp.token))
+            .then( resp => setToken(token['mr-token'], resp.token))
             .catch( error => console.log(error))
     }
 
