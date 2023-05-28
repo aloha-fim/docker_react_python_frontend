@@ -153,7 +153,7 @@ function Auth(){
                                             />
 
                                         </InputGroup>
-                                        <FormGroup check className="text-left">
+                                        {/* <FormGroup check className="text-left">
                                             <Label check>
                                             <Input type="checkbox" />
                                             <span className="form-check-sign" />I agree to the{" "}
@@ -164,14 +164,14 @@ function Auth(){
                                                 terms and conditions
                                             </a>
                                             .
+                                            </Label>
+                                        </FormGroup> */}
                                             <br></br>
                                             <br></br>
                                             { isLoginView ? 
                                                 <p onClick={() => setIsLoginView(false)}>You don't have an account? Register here.</p> :
                                                 <p onClick={() => setIsLoginView(true)}>You already have an account? Login here.</p>
-                                            }
-                                            </Label>
-                                        </FormGroup>
+                                            }                                        
                                         </Form>
                                     </CardBody>
                                     <CardFooter>
