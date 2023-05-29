@@ -39,13 +39,13 @@ function Auth(){
     useEffect( () => {
         console.log(access_token);
         if(access_token['access_token']) window.location.href = '/test';
-        //document.body.classList.toggle("register-page");
-        //document.documentElement.addEventListener("mousemove", followCursor);
+        document.body.classList.toggle("register-page");
+        document.documentElement.addEventListener("mousemove", followCursor);
         // Specify how to clean up after this effect:
-        //return function cleanup() {
-        //    document.body.classList.toggle("register-page");
-        //    document.documentElement.removeEventListener("mousemove", followCursor);
-        //};
+        return function cleanup() {
+           document.body.classList.toggle("register-page");
+           document.documentElement.removeEventListener("mousemove", followCursor);
+        };
     }, [access_token])
 
     //create followCursor
