@@ -19,7 +19,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/api/movie",
-    element: <App />,
+    element: <h1>The is the site to really connect all of the Hawaii</h1>,
   },
 ]);
 
