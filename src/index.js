@@ -1,6 +1,6 @@
 import React from 'react';
 //import React, { createContext } from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 //import './index.css';
 //import { ReactDOM } from 'react-dom/client';
 
@@ -31,25 +31,40 @@ const corsOptions = {
 //app.use(logger("dev"));
 //app.use(cors(corsOptions));
 
+//attempt to use react-router-v6
+ReactDOM.render(
+  <React.StrictMode>
+    <CookiesProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Auth/>}/>
+          <Route exact path="/moviemaker" element={<App/>}/>
+        </Routes>  
+      </BrowserRouter>
+    </CookiesProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-export default function Router() {
-  return (
-    <React.StrictMode>
-      <CookiesProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Auth/>} />
-            <Route path="/moviemaker" element={<App/>} />
-          </Routes>
-        </BrowserRouter>
-      </CookiesProvider>
-    </React.StrictMode>
-  )
-}
 
-const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container);
-root.render(<Router/>);
+// export default function Router() {
+//   return (
+//     <React.StrictMode>
+//       <CookiesProvider>
+//         <BrowserRouter>
+//           <Routes>
+//             <Route path="/" element={<Auth/>} />
+//             <Route path="/moviemaker" element={<App/>} />
+//           </Routes>
+//         </BrowserRouter>
+//       </CookiesProvider>
+//     </React.StrictMode>
+//   )
+// }
+
+// const container = document.getElementById('root');
+// const root = ReactDOM.createRoot(container);
+// root.render(<Router/>);
 
 
 // If you want to start measuring performance in your app, pass a function
