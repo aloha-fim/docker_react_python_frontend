@@ -16,12 +16,14 @@ import { CookiesProvider } from 'react-cookie';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Test />,
-  },
-  {
-    path: "test",
-    element: <Test />,
-  },
+    element: <Auth />,
+    children: [
+      {
+        path: "/test",
+        element: <Test />,
+      },
+    ],
+  },  
 ]);
 
 const container = document.getElementById('root');
