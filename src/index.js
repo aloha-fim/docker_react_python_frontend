@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <Auth />,
   },
   {
-    path: "/moviemaker",
+    path: "/api/movie",
     element: <App />,
   },
 ]);
