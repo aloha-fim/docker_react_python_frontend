@@ -7,7 +7,7 @@ function MovieDetails(props){
 
     const [ highlighted, setHighlighted ] = useState(-1);
     //const [ mov, setMovie ] = useState(props.movie);
-    const [token] = useCookies(['mr-token']);
+    const [access_token] = useCookies(['access_token']);
 
     let mov = props.movie;
 
@@ -20,7 +20,7 @@ function MovieDetails(props){
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Token ${token['mr-token']}`
+        'Authorization': `Token ${access_token['access_token']}`
       },
       body: JSON.stringify( {stars: rate + 1} )
     })
@@ -33,7 +33,7 @@ function MovieDetails(props){
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Token ${token['mr-token']}`        
+                'Authorization': `Token ${access_token['access_token']}`        
             }
         })
         .then( resp => resp.json())

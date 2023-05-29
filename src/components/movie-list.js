@@ -7,7 +7,7 @@ import { useCookies}  from 'react-cookie';
 
 function MovieList(props){
 
-    const [token] = useCookies(['mr-token']);
+    const [access_token] = useCookies(['access_token']);
 
     const movieClicked = movie => evt => {
         props.movieClicked(movie)
@@ -17,7 +17,7 @@ function MovieList(props){
         props.editClicked(movie);
     }
     const removeClicked = movie => {
-        API.deleteMovie(movie.id, token['mr-token'])
+        API.deleteMovie(movie.id, access_token['access_token'])
             .then(() => props.removeClicked(movie))
             .catch(error=> console.log())
     }

@@ -34,11 +34,11 @@ function Auth(){
     const [ password, setPassword ] = useState('');
     const [ isLoginView, setIsLoginView ] = useState(true);
 
-    const [token, setToken] = useCookies(['mr-token']);
+    const [access_token, setToken] = useCookies(['access_token']);
    
     useEffect( () => {
         console.log(token);
-        if(token['mr-token']) window.location.href = '/moviemaker';
+        if(access_token['access_token']) window.location.href = '/moviemaker';
         document.body.classList.toggle("register-page");
         document.documentElement.addEventListener("mousemove", followCursor);
         // Specify how to clean up after this effect:
@@ -46,7 +46,7 @@ function Auth(){
             document.body.classList.toggle("register-page");
             document.documentElement.removeEventListener("mousemove", followCursor);
         };
-    }, [token])
+    }, [access_token])
 
     //create followCursor
     const followCursor = (event) => {
@@ -70,7 +70,7 @@ function Auth(){
 
     const loginClicked = () => {
         API.loginUser({username, password}) 
-            .then( resp => setToken(token['mr-token'], resp.token))
+            .then( resp => setToken('access_token', resp.access_token))
             .catch( error => console.log(error))
     }
 
@@ -112,6 +112,7 @@ function Auth(){
                                     </CardHeader>
                                     <CardBody>
                                         <Form className="form">
+                                        <Label htmlFor="username">Username</Label><br/>
                                         <InputGroup
                                             className={classnames({
                                             "input-group-focus": username
@@ -132,6 +133,7 @@ function Auth(){
                                             //onBlur={(e) => setUsername(false)}
                                             />
                                         </InputGroup>
+                                        <Label htmlFor="password">Password</Label><br/>
                                         <InputGroup
                                             className={classnames({
                                             "input-group-focus": password

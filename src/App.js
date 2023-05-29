@@ -14,7 +14,7 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [editedMovie, setEditedMovie] = useState(null);
-  const [token, setToken, deleteToken] = useCookies(['mr-token']);
+  const [token, setToken, deleteToken] = useCookies(['access_token']);
   const [data, loading, error] = useFetch();
 
 
@@ -22,7 +22,7 @@ function App() {
   useEffect( () => {
     //setToken(token['mr-token'])
     console.log(token);
-    if(!token['mr-token']) window.location.href = '/';
+    if(!token['access_token']) window.location.href = '/';
   }, [token])
 
   useEffect(() => {
@@ -65,7 +65,7 @@ function App() {
     setMovies(newMovies);
   }
   const logoutUser = () => {
-    deleteToken(['mr-token']);
+    deleteToken(['access_token']);
   }
 
   if(loading) return <h1>Loading...</h1>

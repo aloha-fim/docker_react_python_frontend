@@ -6,7 +6,7 @@ function MovieForm(props) {
 
     const [ title, setTitle ] = useState('');
     const [ description, setDescription ] = useState('');
-    const [token] = useCookies(['mr-token']);
+    const [ access_token ] = useCookies(['access_token']);
 
     useEffect( () => {
         setTitle(props.movie.title);
@@ -15,13 +15,13 @@ function MovieForm(props) {
 
     const updateClicked = () => {
         //console.log('update here');
-        API.updateMovie(props.movie.id, {title, description}, token['mr-token'])
+        API.updateMovie(props.movie.id, {title, description}, access_token['access_token'])
         .then( resp => props.updatedMovie(resp))
         .catch( error => console.log(error))
     }
 
     const createClicked = () => {
-        API.updateMovie(props.movie.id, {title, description}, token['mr-token'])
+        API.updateMovie(props.movie.id, {title, description}, access_token['access_token'])
         .then( resp => props.movieCreated(resp))
         .catch( error => console.log(error))
     }
