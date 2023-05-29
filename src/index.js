@@ -8,7 +8,7 @@ import "./assets/demo/demo.css";
 import App from './App';
 import Auth from './components/auth';
 //import reportWebVitals from './reportWebVitals';
-import * as serviceWorker from './serviceWorker';
+//import * as serviceWorker from './serviceWorker';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
 
@@ -38,4 +38,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 //reportWebVitals();
-serviceWorker.unregister();
+//serviceWorker.unregister();
