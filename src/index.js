@@ -16,7 +16,7 @@ import { CookiesProvider } from 'react-cookie';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Auth />,
+    element: <Test />,
   },
   {
     path: "test",
