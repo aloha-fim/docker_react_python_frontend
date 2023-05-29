@@ -5,6 +5,7 @@ import "./assets/css/nucleo-icons.css";
 import "./assets/scss/blk-design-system-react.scss";
 import "./assets/demo/demo.css";
 
+import Test from './components/test';
 import App from './App';
 import Auth from './components/auth';
 //import reportWebVitals from './reportWebVitals';
@@ -18,8 +19,8 @@ const router = createBrowserRouter([
     element: <Auth />,
   },
   {
-    path: "/store",
-    element: <h1>The is the site to really connect all of the Hawaii</h1>,
+    path: "/test",
+    element: <Test />,
   },
 ]);
 
