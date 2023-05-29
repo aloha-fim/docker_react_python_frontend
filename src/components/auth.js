@@ -37,7 +37,7 @@ function Auth(){
     const [access_token, setToken] = useCookies(['access_token']);
    
     useEffect( () => {
-        console.log(token);
+        console.log(access_token);
         if(access_token['access_token']) window.location.href = '/moviemaker';
         document.body.classList.toggle("register-page");
         document.documentElement.addEventListener("mousemove", followCursor);
