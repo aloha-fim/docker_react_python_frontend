@@ -2,7 +2,7 @@ import React from 'react';
 //import React, { createContext } from 'react';
 //import ReactDOM from 'react-dom';
 //import './index.css';
-import { createRoot } from 'react-dom/client';
+import { ReactDOM } from 'react-dom/client';
 
 import "./assets/css/nucleo-icons.css";
 import "./assets/scss/blk-design-system-react.scss";
@@ -28,9 +28,6 @@ const corsOptions = {
 
 // const TokenContext = createContext(null)
 
-const container = document.getElementById('root');
-const root = createRoot(container);
-
 //app.use(logger("dev"));
 //app.use(cors(corsOptions));
 
@@ -42,14 +39,17 @@ function Router() {
       <CookiesProvider>
         <BrowserRouter>
           <Routes>
-            <Route exact path="/" element={<Auth/>} />
-            <Route exact path="/moviemaker" element={<App/>} />
+            <Route path="/" element={<Auth/>} />
+            <Route path="/moviemaker" element={<App/>} />
           </Routes>
         </BrowserRouter>
       </CookiesProvider>
     </React.StrictMode>
   )
 }
+
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
 root.render(<Router/>);
 
 
