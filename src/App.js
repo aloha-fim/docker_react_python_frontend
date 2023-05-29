@@ -17,23 +17,14 @@ function App() {
   const [access_token, setToken, deleteToken] = useCookies(['access_token']);
   const [data, loading, error] = useFetch();
 
-
-
-  useEffect( () => {
-    //setToken(token['mr-token'])
-    console.log(access_token);
-    if(!access_token['access_token']) window.location.href = '/';
-  }, [access_token])
-
   useEffect(() => {
-    //console.log(data);
     setMovies(data);
   }, [data])
 
-  //const movieClicked = movie => {
-  //  //console.log(movie.title)
-  //  setSelectedMovie(movie);
-  //}
+  useEffect( () => {
+    console.log(access_token);
+    if(!access_token['access_token']) window.location.href = '/';
+  }, [access_token])
 
   const loadMovie = movie => {
     setSelectedMovie(movie);
