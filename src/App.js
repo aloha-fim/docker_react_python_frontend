@@ -14,16 +14,16 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [editedMovie, setEditedMovie] = useState(null);
-  const [token, setToken, deleteToken] = useCookies(['access_token']);
+  const [access_token, setToken, deleteToken] = useCookies(['access_token']);
   const [data, loading, error] = useFetch();
 
 
 
   useEffect( () => {
     //setToken(token['mr-token'])
-    console.log(token);
-    if(!token['access_token']) window.location.href = '/';
-  }, [token])
+    console.log(access_token);
+    if(!access_token['access_token']) window.location.href = '/';
+  }, [access_token])
 
   useEffect(() => {
     //console.log(data);
