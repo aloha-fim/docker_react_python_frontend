@@ -1,8 +1,8 @@
 import React from 'react';
 //import React, { createContext } from 'react';
-//import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 //import './index.css';
-import { ReactDOM } from 'react-dom/client';
+//import { ReactDOM } from 'react-dom/client';
 
 import "./assets/css/nucleo-icons.css";
 import "./assets/scss/blk-design-system-react.scss";
@@ -32,8 +32,7 @@ const corsOptions = {
 //app.use(cors(corsOptions));
 
 
-function Router() {
-
+export default function Router() {
   return (
     <React.StrictMode>
       <CookiesProvider>
