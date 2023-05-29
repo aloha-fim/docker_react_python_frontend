@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <Auth />,
   },
   {
-    path: "/api/movie",
+    path: "/store",
     element: <h1>The is the site to really connect all of the Hawaii</h1>,
   },
 ]);
