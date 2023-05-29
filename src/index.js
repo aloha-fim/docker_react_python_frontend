@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 //import './index.css';
 import "./assets/css/nucleo-icons.css";
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     element: <Auth />,
   },
   {
-    path: "/testing",
+    path: "testing",
     element: <Test />,
   },  
 ]);
@@ -27,11 +27,11 @@ const router = createBrowserRouter([
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
-    <React.StrictMode>
+    <StrictMode>
       <CookiesProvider>
         <RouterProvider router={router} />
       </CookiesProvider>
-    </React.StrictMode>
+    </StrictMode>
 );
 
 
