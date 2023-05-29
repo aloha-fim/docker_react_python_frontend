@@ -70,7 +70,7 @@ function Auth(){
 
     const loginClicked = () => {
         API.loginUser({username, password}) 
-            .then( resp => setToken('access_token', resp.token))
+            .then( resp => setToken('access_token', resp.access_token))
             .catch( error => console.log(error))
     }
 
