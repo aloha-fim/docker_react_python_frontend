@@ -14,29 +14,56 @@ import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Auth />,
-  },
-  {
-    path: "store",
-    element: <App />,
-  }, 
-  {
-    path: "test",
-    element: <Test />,
-  }, 
-]);
+    {
+      path: "/",
+      element: <Auth />,
+    },
+    {
+      path: "store",
+      element: <App />,
+    }, 
+    {
+      path: "test",
+      element: <Test />,
+    }, 
+  ]);
+  
+  const container = document.getElementById('root');
+  const root = createRoot(container);
+  root.render(
+      <StrictMode>
+       
+          <RouterProvider router={router} />
+        
+      </StrictMode>
+  );
+  
 
-const container = document.getElementById('root');
-const root = createRoot(container);
-root.render(
-    <StrictMode>
-      <CookiesProvider>
-        <RouterProvider router={router} />
-      </CookiesProvider>
-    </StrictMode>
-);
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Auth />,
+//   },
+//   {
+//     path: "store",
+//     element: <App />,
+//   }, 
+//   {
+//     path: "test",
+//     element: <Test />,
+//   }, 
+// ]);
+
+// const container = document.getElementById('root');
+// const root = createRoot(container);
+// root.render(
+//     <StrictMode>
+//       <CookiesProvider>
+//         <RouterProvider router={router} />
+//       </CookiesProvider>
+//     </StrictMode>
+// );
 
 
 // If you want to start measuring performance in your app, pass a function
