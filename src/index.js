@@ -13,23 +13,22 @@ import Auth from './components/auth';
 import { BrowserRouter, createBrowserRouter, RouterProvider, Routes, Route} from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
 
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-  
-  const container = document.getElementById('root');
-  const root = createRoot(container);
-  root.render(
-      <StrictMode>
-        <CookiesProvider>
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Test />} />
-              <Route path="/auth" element={<Auth />} />
-              <Route path="/store" element={<App />} />
-            </Routes>
-          </BrowserRouter>
-        </CookiesProvider>
-      </StrictMode>
-  );
+root.render(
+  <StrictMode>
+    <CookiesProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Test />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/store" element={<App />} />
+        </Routes>
+      </BrowserRouter>
+    </CookiesProvider>
+  </StrictMode>
+);
   
 
 
