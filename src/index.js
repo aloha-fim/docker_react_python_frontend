@@ -10,31 +10,23 @@ import App from './App';
 import Auth from './components/auth';
 //import reportWebVitals from './reportWebVitals';
 //import * as serviceWorker from './serviceWorker';
-import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import { BrowserRouter, createBrowserRouter, RouterProvider, Routes, Route} from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
 
-const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Auth />,
-    },
-    {
-      path: "store",
-      element: <App />,
-    }, 
-    {
-      path: "test",
-      element: <Test />,
-    }, 
-  ]);
+
   
   const container = document.getElementById('root');
   const root = createRoot(container);
   root.render(
       <StrictMode>
-       
-          <RouterProvider router={router} />
-        
+        <CookiesProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path='/' element={<Auth />} />
+              <Route path='/test' element={<Test />} />
+            </Routes>
+          </BrowserRouter>
+        </CookiesProvider>
       </StrictMode>
   );
   
