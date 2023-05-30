@@ -22,9 +22,9 @@ import { CookiesProvider } from 'react-cookie';
         <CookiesProvider>
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<Auth />} />
-                <Route path="store" element={<App />} />
-              <Route path="test" element={<Test />} />
+              <Route path="/" element={<Test />} />
+              <Route path="/auth" element={<Auth />} />
+              <Route path="/store" element={<App />} />
             </Routes>
           </BrowserRouter>
         </CookiesProvider>
