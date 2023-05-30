@@ -19,9 +19,13 @@ const router = createBrowserRouter([
     element: <Auth />,
   },
   {
-    path: "testing",
+    path: "store",
+    element: <App />,
+  }, 
+  {
+    path: "test",
     element: <Test />,
-  },  
+  }, 
 ]);
 
 const container = document.getElementById('root');
