@@ -6,18 +6,17 @@ function useFetch() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState();
-    const [access_token] = useCookies(['access_token']);
+    //const [access_token] = useCookies(['access_token']);
 
     useEffect( ()=> {
         async function fetchData() {
             setLoading(true);
             setError();
-            const data = await API.getMovies(access_token['access_token'])
+            const data = await API.getMovies()
             .catch( err => setError(err));
             setData(data);
             setLoading(false);
         }
-
         fetchData();
     }, []);
     return [data, loading, error]

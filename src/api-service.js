@@ -17,12 +17,11 @@ export class API {
             body: JSON.stringify( body )
         }).then( resp => resp.json())     
     }
-    static getMovies(access_token){
+    static getMovies(){
         fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/api/movie`, {
             method: 'GET',
             headers: {
-              'Content-Type': 'application/json',
-              'Authorization': `Token ${access_token}`
+              'Content-Type': 'application/json'
             }
           }).then( resp => resp.json())
     }
