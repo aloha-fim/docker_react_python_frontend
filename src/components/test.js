@@ -1,11 +1,13 @@
-import React from "react";
-  
+import * as React from "react";
+import { Link } from "react-router-dom";
+
 const Test = () => {
   return (
-    <div>
-      <h1>The is the site to really connect all of the Hawaii</h1>
-    </div>
-  );
-};
+    <>
+    <Link to="/auth">Login</Link>
+    <h3>test login</h3>
+    </>
+  )
+}
 
 export default Test;
