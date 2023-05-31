@@ -23,6 +23,7 @@ import {
     Row,
     Col
   } from "reactstrap";
+import { useNavigate } from 'react-router-dom';
 
 
 function Auth(){
@@ -35,10 +36,13 @@ function Auth(){
     const [ isLoginView, setIsLoginView ] = useState(true);
 
     const [access_token, setToken] = useCookies(['access_token']);
+
+    const navigate = useNavigate();
    
     useEffect( () => {
         console.log(access_token);
-        if(access_token['access_token']) window.location.href = '/display';
+        //if(access_token['access_token']) window.location.href = '/display';
+        if(access_token['access_token']) setTimeout(() => {navigate('/display', { replace:true });}, 3000);
         document.body.classList.toggle("register-page");
         document.documentElement.addEventListener("mousemove", followCursor);
         // Specify how to clean up after this effect:
