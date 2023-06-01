@@ -18,7 +18,7 @@ export class API {
         }).then( resp => resp.json())     
     }
     static getMovies(access_token){
-        fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/api/movie`, {
+        return fetch(`https://rest-apis-flask-python-project-avlc.onrender.com/api/movie`, {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
