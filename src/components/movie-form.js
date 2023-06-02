@@ -2,16 +2,36 @@ import React, { useState, useEffect } from 'react';
 import { API } from '../api-service';
 import { useCookies } from 'react-cookie';
 
+//function MovieForm(props) {  
 function MovieForm(props) {
-
     const [ title, setTitle ] = useState('');
     const [ description, setDescription ] = useState('');
     const [ access_token ] = useCookies(['access_token']);
 
-    useEffect( () => {
-        setTitle(props.movie.title);
-        setDescription(props.movie.description);
-    }, [props.movie])
+    // useEffect( () => {
+    //     setTitle(props.movie.title);
+    //     setDescription(props.movie.description);
+    // }, [props.movie])
+
+
+    useEffect(() => {
+        const url = "https://rest-apis-flask-python-project-avlc.onrender.com/api/movie";
+
+        const fetchData = async () => {
+            try {
+                const response = await fetch(url);
+                const movie = await response.json();
+                console.log(movie.title);
+                console.log(movie.description);
+                setTitle(movie.title);
+                setDescription(movie.description);
+            } catch (error) {
+                console.log("error", error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     const updateClicked = () => {
         //console.log('update here');
@@ -21,7 +41,7 @@ function MovieForm(props) {
     }
 
     const createClicked = () => {
-        API.updateMovie(props.movie.id, {title, description}, access_token['access_token'])
+        API.createMovie({title, description}, access_token['access_token'])
         .then( resp => props.movieCreated(resp))
         .catch( error => console.log(error))
     }
