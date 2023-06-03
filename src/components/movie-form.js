@@ -15,7 +15,7 @@ function MovieForm(props) {
 
 
     useEffect(() => {
-        const url = "https://rest-apis-flask-python-project-avlc.onrender.com/api/movie";
+        const url = `https://rest-apis-flask-python-project-avlc.onrender.com/api/movie`;
 
         const fetchData = async () => {
             try {
