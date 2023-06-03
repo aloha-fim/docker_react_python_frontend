@@ -46,7 +46,7 @@ function MovieForm(props) {
         .catch( error => console.log(error))
     }
 
-    const isDisabled = title.length === 0 || description.length === 0;
+    const isDisabled = movie.title.length === 0 || movie.description.length === 0;
 
     return (
         <React.Fragment>
