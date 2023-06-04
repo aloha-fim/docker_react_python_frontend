@@ -16,9 +16,9 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Test />} />
-            <Route path="auth" element={<Auth />} />
-            <Route path="display" element={<Display />} />
           </Route>
+          <Route path="auth" element={<Auth />} />
+          <Route path="display" element={<Display />} />
         </Routes>
       </CookiesProvider>
     </div>
