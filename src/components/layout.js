@@ -1,3 +1,5 @@
+
+import React from "react";
 import { Outlet } from "react-router-dom";
 
 import IndexNavbar from "./components/indexnavbar/IndexNavbar";

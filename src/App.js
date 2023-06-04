@@ -7,7 +7,7 @@ import './App.css';
 import Test from './components/test';
 import Display from './display';
 import Auth from './components/auth';
-import Layout from './components/header/header';
+import Layout from './components/layout';
 
 function App() {
   return (
