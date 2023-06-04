@@ -2,7 +2,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-import IndexNavbar from "./components/indexnavbar/indexnavbar";
+import IndexNavbar from "./components/indexnavbar/IndexNavbar";
 import Header from "./components/header/header";
 
 export default function Layout() {
