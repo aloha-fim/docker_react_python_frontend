@@ -34,7 +34,7 @@ export default function Header() {
         <div className="content-center brand">
           <h1 className="h1-seo">Forvava• React</h1>
           <h3 className="d-none d-sm-block">
-            It's Free and Open Source.
+            It's Free and Test.
           </h3>
         </div>
       </Container>

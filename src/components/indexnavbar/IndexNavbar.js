@@ -37,9 +37,11 @@ import {
 } from "reactstrap";
 
 export default function IndexNavbar() {
+
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   const [collapseOut, setCollapseOut] = React.useState("");
   const [color, setColor] = React.useState("navbar-transparent");
+  
   React.useEffect(() => {
     window.addEventListener("scroll", changeColor);
     return function cleanup() {
