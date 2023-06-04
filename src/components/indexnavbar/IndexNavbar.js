@@ -81,11 +81,11 @@ export default function IndexNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
-            <span>BLK• </span>
-            Design System React
+            <span>Forvava• </span>
+            Forever Events
           </NavbarBrand>
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Designed and Coded by Creative Tim
+            Forvava Now and Forever
           </UncontrolledTooltip>
           <button
             aria-expanded={collapseOpen}
@@ -172,22 +172,22 @@ export default function IndexNavbar() {
                 Getting started
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
+                {/* <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
                   <i className="tim-icons icon-paper" />
                   Documentation
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/register-page">
+                </DropdownItem> */}
+                <DropdownItem tag={Link} to="/auth">
                   <i className="tim-icons icon-bullet-list-67" />
                   Register Page
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/landing-page">
+                <DropdownItem tag={Link} to="/display">
                   <i className="tim-icons icon-image-02" />
                   Landing Page
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/profile-page">
+                {/* <DropdownItem tag={Link} to="/profile-page">
                   <i className="tim-icons icon-single-02" />
                   Profile Page
-                </DropdownItem>
+                </DropdownItem> */}
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>
@@ -195,12 +195,12 @@ export default function IndexNavbar() {
                 className="nav-link d-none d-lg-block"
                 color="primary"
                 target="_blank"
-                href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
+                href="https://react-python-frontend.onrender.com/"
               >
-                <i className="tim-icons icon-spaceship" /> Upgrade to PRO
+                <i className="tim-icons icon-spaceship" /> Main
               </Button>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <Button
                 className="nav-link d-none d-lg-block"
                 color="default"
@@ -208,7 +208,7 @@ export default function IndexNavbar() {
               >
                 <i className="tim-icons icon-cloud-download-93" /> Download
               </Button>
-            </NavItem>
+            </NavItem> */}
           </Nav>
         </Collapse>
       </Container>
