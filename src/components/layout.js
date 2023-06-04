@@ -2,8 +2,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-import IndexNavbar from "./components/indexnavbar/IndexNavbar";
-import Header from "./components/header/header";
+import IndexNavbar from "./indexnavbar/IndexNavbar";
+import Header from "./header/header";
 
 export default function Layout() {
 
