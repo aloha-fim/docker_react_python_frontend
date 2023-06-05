@@ -50,7 +50,7 @@ export default function LandingPage() {
   return (
     <>
       {/* <ExamplesNavbar /> */}
-      <div className="wrapper">
+      <div className="main">
         <div className="page-header">
           <img
             alt="..."
@@ -86,11 +86,11 @@ export default function LandingPage() {
             <Row className="row-grid justify-content-between align-items-center text-left">
               <Col lg="6" md="6">
                 <h1 className="text-white">
-                  We improve your events <br />
-                  <span className="text-white">to last forever</span>
+                  We improve events <br />
+                  <span className="text-white">that last forever</span>
                 </h1>
                 <p className="text-white mb-3">
-                  We use AI to power collaboration 
+                  Using AI to power collaboration 
                 </p>
                 <div className="btn-wrapper mb-3">
                   <p className="category text-success d-inline">
@@ -169,7 +169,7 @@ export default function LandingPage() {
                               <div className="numbers">
                                 <CardTitle tag="p">3,237</CardTitle>
                                 <p />
-                                <p className="card-category">Award Presenter</p>
+                                <p className="card-category">Presenter Ranking</p>
                               </div>
                             </Col>
                           </Row>
@@ -189,7 +189,7 @@ export default function LandingPage() {
                               <div className="numbers">
                                 <CardTitle tag="p">3,653</CardTitle>
                                 <p />
-                                <p className="card-category">Commitments</p>
+                                <p className="card-category">Sponsorship</p>
                               </div>
                             </Col>
                           </Row>
@@ -211,7 +211,7 @@ export default function LandingPage() {
                               <div className="numbers">
                                 <CardTitle tag="p">593</CardTitle>
                                 <p />
-                                <p className="card-category">Sponsorship</p>
+                                <p className="card-category">Commitments</p>
                               </div>
                             </Col>
                           </Row>
@@ -247,11 +247,11 @@ export default function LandingPage() {
                       Insights
                     </h1>
                     <p>
-                      Identify from start
+                      From the start
                     </p>
                     <br />
                     <p>
-                      Then measure Engagement in perpetuity
+                      Measure Engagement in perpetuity
                     </p>
                     <br />
                     <a
@@ -306,7 +306,7 @@ export default function LandingPage() {
                       <div className="icon icon-warning">
                         <i className="tim-icons icon-chart-pie-36" />
                       </div>
-                      <h4 className="info-title">High Incomes</h4>
+                      <h4 className="info-title">Higher Income</h4>
                       <hr className="line-warning" />
                       <p>
                         Data driven performance 
@@ -321,7 +321,7 @@ export default function LandingPage() {
                       <h4 className="info-title">Verified People</h4>
                       <hr className="line-success" />
                       <p>
-                        Measurable insight to speaker performance
+                        Speaker performance
                       </p>
                     </div>
                   </Col>
@@ -336,50 +336,6 @@ export default function LandingPage() {
             className="path"
             src={require("../assets/img/path5.png")}
           />
-          <Container>
-            <Row className="row-grid justify-content-between">
-              <Col md="5">
-                <img
-                  alt="..."
-                  className="img-fluid floating"
-                  src={require("../assets/img/chester-wade.jpg")}
-                />
-                <Card className="card-stats bg-danger">
-                  <CardBody>
-                    <div className="justify-content-center">
-                      <div className="numbers">
-                        <CardTitle tag="p">100%</CardTitle>
-                        <p className="card-category text-white">Safe</p>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-                <Card className="card-stats bg-info">
-                  <CardBody>
-                    <div className="justify-content-center">
-                      <div className="numbers">
-                        <CardTitle tag="p">573 K</CardTitle>
-                        <p className="card-category text-white">
-                          Satisfied customers
-                        </p>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-                <Card className="card-stats bg-default">
-                  <CardBody>
-                    <div className="justify-content-center">
-                      <div className="numbers">
-                        <CardTitle tag="p">10 425</CardTitle>
-                        <p className="card-category text-white">Business</p>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-              </Col>
-             
-            </Row>
-          </Container>
         </section>
         <section className="section section-lg">
           <img
