@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { CookiesProvider } from 'react-cookie';
 import './App.css';
 
-import Test from './components/test';
+import LandingPage from './components/landed';
 import Display from './display';
 import Auth from './components/auth';
 import Layout from './components/layout';
@@ -15,7 +15,7 @@ function App() {
       <CookiesProvider>
         <Routes>
           <Route element={<Layout />}>
-            <Route path="/" element={<Test />} />
+            <Route path="/" element={<LandingPage />} />
           </Route>
           <Route path="auth" element={<Auth />} />
           <Route path="display" element={<Display />} />
