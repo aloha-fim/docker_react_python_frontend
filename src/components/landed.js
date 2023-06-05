@@ -41,10 +41,10 @@ import {
 
 export default function LandingPage() {
   React.useEffect(() => {
-    document.body.classList.toggle("index-page");
+    document.body.classList.toggle("landing-page");
     // Specify how to clean up after this effect:
     return function cleanup() {
-      document.body.classList.toggle("index-page");
+      document.body.classList.toggle("landing-page");
     };
   }, []);
   return (
@@ -268,7 +268,7 @@ export default function LandingPage() {
             </Container>
           </section>
         </section>
-        {/* <section className="section section-lg">
+        <section className="section section-lg">
           <img
             alt="..."
             className="path"
@@ -283,8 +283,8 @@ export default function LandingPage() {
             alt="..."
             className="path3"
             src={require("../assets/img/path2.png")}
-          /> */}
-          {/* <Container>
+          />
+          <Container>
             <Row className="justify-content-center">
               <Col lg="12">
                 <h1 className="text-center">Your best benefit</h1>
@@ -354,7 +354,7 @@ export default function LandingPage() {
             alt="..."
             className="path"
             src={require("../assets/img/path3.png")}
-          /> */}
+          />
           <Container>
             <Row>
               <Col md="4">
