@@ -584,7 +584,7 @@ export default function LandingPage() {
             </Row>
           </Container>
         </section>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
