@@ -41,10 +41,10 @@ import {
 
 export default function LandingPage() {
   React.useEffect(() => {
-    document.body.classList.toggle("landing-page");
+    document.body.classList.toggle("index-page");
     // Specify how to clean up after this effect:
     return function cleanup() {
-      document.body.classList.toggle("landing-page");
+      document.body.classList.toggle("index-page");
     };
   }, []);
   return (
@@ -404,7 +404,7 @@ export default function LandingPage() {
                     <img
                       alt="..."
                       className="img-center img-fluid"
-                      src={require("../assets/img/etherum.png")}
+                      src={require("../assets/img/lite.png")}
                     />
                   </CardHeader>
                   <CardBody>
