@@ -41,16 +41,16 @@ import {
 
 export default function LandingPage() {
   React.useEffect(() => {
-    document.body.classList.toggle("landing-page");
+    document.body.classList.toggle("index-page");
     // Specify how to clean up after this effect:
     return function cleanup() {
-      document.body.classList.toggle("landing-page");
+      document.body.classList.toggle("index-page");
     };
   }, []);
   return (
     <>
       {/* <ExamplesNavbar /> */}
-      <div className="main">
+      <div className="wrapper">
         <div className="page-header">
           <img
             alt="..."
@@ -94,7 +94,7 @@ export default function LandingPage() {
                 </p>
                 <div className="btn-wrapper mb-3">
                   <p className="category text-success d-inline">
-                    Engagement 10x
+                    Engagement Overdrive
                   </p>
                   <Button
                     className="btn-link"
@@ -284,7 +284,7 @@ export default function LandingPage() {
             className="path3"
             src={require("../assets/img/path2.png")}
           />
-          <Container>
+          {/* <Container>
             <Row className="justify-content-center">
               <Col lg="12">
                 <h1 className="text-center">Your best benefit</h1>
@@ -354,7 +354,7 @@ export default function LandingPage() {
             alt="..."
             className="path"
             src={require("../assets/img/path3.png")}
-          />
+          /> */}
           <Container>
             <Row>
               <Col md="4">
