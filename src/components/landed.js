@@ -86,17 +86,15 @@ export default function LandingPage() {
             <Row className="row-grid justify-content-between align-items-center text-left">
               <Col lg="6" md="6">
                 <h1 className="text-white">
-                  We keep your coin <br />
-                  <span className="text-white">secured</span>
+                  We improve your events <br />
+                  <span className="text-white">to last forever</span>
                 </h1>
                 <p className="text-white mb-3">
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which I enjoy with my
-                  whole heart. I am alone, and feel...
+                  We use AI to power collaboration 
                 </p>
                 <div className="btn-wrapper mb-3">
                   <p className="category text-success d-inline">
-                    From 9.99%/mo
+                    Engagement 10x
                   </p>
                   <Button
                     className="btn-link"
@@ -171,7 +169,7 @@ export default function LandingPage() {
                               <div className="numbers">
                                 <CardTitle tag="p">3,237</CardTitle>
                                 <p />
-                                <p className="card-category">Awards</p>
+                                <p className="card-category">Award Presenter</p>
                               </div>
                             </Col>
                           </Row>
@@ -191,7 +189,7 @@ export default function LandingPage() {
                               <div className="numbers">
                                 <CardTitle tag="p">3,653</CardTitle>
                                 <p />
-                                <p className="card-category">Commits</p>
+                                <p className="card-category">Commitments</p>
                               </div>
                             </Col>
                           </Row>
@@ -213,7 +211,7 @@ export default function LandingPage() {
                               <div className="numbers">
                                 <CardTitle tag="p">593</CardTitle>
                                 <p />
-                                <p className="card-category">Presents</p>
+                                <p className="card-category">Sponsorship</p>
                               </div>
                             </Col>
                           </Row>
@@ -233,7 +231,7 @@ export default function LandingPage() {
                               <div className="numbers">
                                 <CardTitle tag="p">10,783</CardTitle>
                                 <p />
-                                <p className="card-category">Forks</p>
+                                <p className="card-category">Networking</p>
                               </div>
                             </Col>
                           </Row>
@@ -245,19 +243,15 @@ export default function LandingPage() {
                 <Col md="6">
                   <div className="pl-md-5">
                     <h1>
-                      Large <br />
-                      Achivements
+                      Actionable <br />
+                      Insights
                     </h1>
                     <p>
-                      I should be capable of drawing a single stroke at the
-                      present moment; and yet I feel that I never was a greater
-                      artist than now.
+                      Identify from start
                     </p>
                     <br />
                     <p>
-                      When, while the lovely valley teems with vapour around me,
-                      and the meridian sun strikes the upper surface of the
-                      impenetrable foliage of my trees, and but a few stray.
+                      Then measure Engagement in perpetuity
                     </p>
                     <br />
                     <a
@@ -300,12 +294,10 @@ export default function LandingPage() {
                       <div className="icon icon-primary">
                         <i className="tim-icons icon-money-coins" />
                       </div>
-                      <h4 className="info-title">Low Commission</h4>
+                      <h4 className="info-title">Self Service</h4>
                       <hr className="line-primary" />
                       <p>
-                        Divide details about your work into parts. Write a few
-                        lines about each one. A paragraph describing a feature
-                        will.
+                        Everything under the hood.
                       </p>
                     </div>
                   </Col>
@@ -317,9 +309,7 @@ export default function LandingPage() {
                       <h4 className="info-title">High Incomes</h4>
                       <hr className="line-warning" />
                       <p>
-                        Divide details about your product or agency work into
-                        parts. Write a few lines about each one. A paragraph
-                        describing feature will be a feature.
+                        Data driven performance 
                       </p>
                     </div>
                   </Col>
@@ -331,9 +321,7 @@ export default function LandingPage() {
                       <h4 className="info-title">Verified People</h4>
                       <hr className="line-success" />
                       <p>
-                        Divide details about your product or agency work into
-                        parts. Write a few lines about each one. A paragraph
-                        describing be enough.
+                        Measurable insight to speaker performance
                       </p>
                     </div>
                   </Col>
@@ -389,49 +377,7 @@ export default function LandingPage() {
                   </CardBody>
                 </Card>
               </Col>
-              <Col md="6">
-                <div className="px-md-5">
-                  <hr className="line-success" />
-                  <h3>Awesome features</h3>
-                  <p>
-                    The design system comes with three pre-built pages to help
-                    you get started faster. You can change the text and images
-                    and you're good to go.
-                  </p>
-                  <ul className="list-unstyled mt-5">
-                    <li className="py-2">
-                      <div className="d-flex align-items-center">
-                        <div className="icon icon-success mb-2">
-                          <i className="tim-icons icon-vector" />
-                        </div>
-                        <div className="ml-3">
-                          <h6>Carefully crafted components</h6>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="py-2">
-                      <div className="d-flex align-items-center">
-                        <div className="icon icon-success mb-2">
-                          <i className="tim-icons icon-tap-02" />
-                        </div>
-                        <div className="ml-3">
-                          <h6>Amazing page examples</h6>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="py-2">
-                      <div className="d-flex align-items-center">
-                        <div className="icon icon-success mb-2">
-                          <i className="tim-icons icon-single-02" />
-                        </div>
-                        <div className="ml-3">
-                          <h6>Super friendly support team</h6>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </Col>
+             
             </Row>
           </Container>
         </section>
@@ -458,8 +404,8 @@ export default function LandingPage() {
               <Col md="4">
                 <hr className="line-info" />
                 <h1>
-                  Choose the coin{" "}
-                  <span className="text-info">that fits your needs</span>
+                  Choose the event{" "}
+                  <span className="text-info">that your life needs</span>
                 </h1>
               </Col>
             </Row>
@@ -476,7 +422,7 @@ export default function LandingPage() {
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase">Light Coin</h4>
+                        <h4 className="text-uppercase">Conference</h4>
                         <span>Plan</span>
                         <hr className="line-primary" />
                       </Col>
@@ -508,7 +454,7 @@ export default function LandingPage() {
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase">Dark Coin</h4>
+                        <h4 className="text-uppercase">Meetups</h4>
                         <span>Plan</span>
                         <hr className="line-success" />
                       </Col>
@@ -540,7 +486,7 @@ export default function LandingPage() {
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase">Bright Coin</h4>
+                        <h4 className="text-uppercase">Leads</h4>
                         <span>Plan</span>
                         <hr className="line-info" />
                       </Col>

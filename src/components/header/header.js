@@ -32,9 +32,9 @@ export default function Header() {
       <div className="squares square7" />
       <Container>
         <div className="content-center brand">
-          <h1 className="h1-seo">Forvava• React</h1>
+          <h1 className="h1-seo">Forvava•</h1>
           <h3 className="d-none d-sm-block">
-            It's Free and Test.
+            Events that last forever.
           </h3>
         </div>
       </Container>
