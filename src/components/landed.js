@@ -41,10 +41,10 @@ import {
 
 export default function LandingPage() {
   React.useEffect(() => {
-    document.body.classList.toggle("index-page");
+    document.body.classList.toggle("landing-page");
     // Specify how to clean up after this effect:
     return function cleanup() {
-      document.body.classList.toggle("index-page");
+      document.body.classList.toggle("landing-page");
     };
   }, []);
   return (
