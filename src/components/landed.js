@@ -268,7 +268,7 @@ export default function LandingPage() {
             </Container>
           </section>
         </section>
-        <section className="section section-lg">
+        {/* <section className="section section-lg">
           <img
             alt="..."
             className="path"
@@ -283,7 +283,7 @@ export default function LandingPage() {
             alt="..."
             className="path3"
             src={require("../assets/img/path2.png")}
-          />
+          /> */}
           {/* <Container>
             <Row className="justify-content-center">
               <Col lg="12">
