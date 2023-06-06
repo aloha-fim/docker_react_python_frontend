@@ -18,7 +18,9 @@ export default function Layout() {
     return (
         <>
         <IndexNavbar />
-        <Outlet />
+        <div className="wrapper">
+          <Outlet />
+        </div>
         </>
     );
 };
