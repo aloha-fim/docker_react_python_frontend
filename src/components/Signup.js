@@ -64,7 +64,7 @@ export default function Signup() {
               System.
             </p>
             <div className="btn-wrapper">
-              <Button color="primary" to="register-page" tag={Link}>
+              <Button color="primary" to="auth" tag={Link}>
                 Register Page
               </Button>
             </div>

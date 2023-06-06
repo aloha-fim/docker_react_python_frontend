@@ -19,7 +19,7 @@ import React from "react";
 
 // core components
 // import IndexNavbar from "../components/Navbars/IndexNavbar.js";
-import Header from "./header/header";
+import Header from "./header/header.js";
 // import Footer from "../components/Footer/Footer.js";
 
 // sections for this page/view
@@ -28,7 +28,7 @@ import Header from "./header/header";
 // import Tabs from "../views/IndexSections/Tabs.js";
 // import Pagination from "../views/IndexSections/Pagination.js";
 // import Notifications from "../views/IndexSections/Notifications.js";
-// import Typography from "../views/IndexSections/Typography.js";
+import Typography from "./Typography.js";
 import JavaScript from "./JavaScript.js";
 // import NucleoIcons from "../views/IndexSections/NucleoIcons.js";
 import Signup from "./Signup.js";
@@ -56,6 +56,7 @@ export default function Index() {
           <Notifications />
           <Typography /> */}
           <JavaScript />
+          <Typography />
           {/* <NucleoIcons /> */}
           <Signup />
           <Examples />
