@@ -19,7 +19,7 @@ import React from "react";
 
 // core components
 // import IndexNavbar from "../components/Navbars/IndexNavbar.js";
-import Header from "../header/header.js";
+import Header from "./header/header";
 // import Footer from "../components/Footer/Footer.js";
 
 // sections for this page/view
