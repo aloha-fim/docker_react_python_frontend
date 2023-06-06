@@ -15,10 +15,10 @@ function App() {
     <div className="App">
       <CookiesProvider>
         <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<Index />} />
-            <Route path="landing" element={<LandingPage />} />
-          </Route>
+          {/* <Route element={<Layout />}> */}
+          <Route path="/" element={<Index />} />
+          <Route path="landing" element={<LandingPage />} />
+          {/* </Route> */}
           <Route path="auth" element={<Auth />} />
           <Route path="display" element={<Display />} />
         </Routes>
