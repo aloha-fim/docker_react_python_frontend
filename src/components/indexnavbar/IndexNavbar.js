@@ -81,11 +81,11 @@ export default function IndexNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
-            <span>Forvava• </span>
-            Forever Events
+            <span>PMI Hawaii• </span>
+            Beta Site
           </NavbarBrand>
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Forvava Now and Forever
+            Hawaii PDD Site
           </UncontrolledTooltip>
           <button
             aria-expanded={collapseOpen}
@@ -108,7 +108,7 @@ export default function IndexNavbar() {
             <Row>
               <Col className="collapse-brand" xs="6">
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  BLK•React
+                  Hawaii•PDD
                 </a>
               </Col>
               <Col className="collapse-close text-right" xs="6">
@@ -176,13 +176,13 @@ export default function IndexNavbar() {
                   <i className="tim-icons icon-paper" />
                   Documentation
                 </DropdownItem> */}
-                <DropdownItem tag={Link} to="/auth">
+                <DropdownItem tag={Link} to="/profile-page">
                   <i className="tim-icons icon-bullet-list-67" />
-                  Register Page
+                  Profile Page
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/display">
+                <DropdownItem tag={Link} to="/landing">
                   <i className="tim-icons icon-image-02" />
-                  Landing Page
+                  About Us
                 </DropdownItem>
                 {/* <DropdownItem tag={Link} to="/profile-page">
                   <i className="tim-icons icon-single-02" />

@@ -18,6 +18,7 @@ function App() {
           {/* <Route element={<Layout />}> */}
           <Route path="/" element={<Index />} />
           <Route path="landing" element={<LandingPage />} />
+          <Route path="profile-page" element={<ProfilePage />} />
           {/* </Route> */}
           <Route path="auth" element={<Auth />} />
           <Route path="display" element={<Display />} />

@@ -87,7 +87,7 @@ export default function LandingPage() {
               <Col lg="6" md="6">
                 <h1 className="text-white">
                   We improve events <br />
-                  <span className="text-white">that last forever</span>
+                  <span className="text-white">for PDD</span>
                 </h1>
                 <p className="text-white mb-3">
                   Using AI to power collaboration 

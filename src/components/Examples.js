@@ -41,11 +41,11 @@ export default function Examples() {
               to="landing"
               tag={Link}
             >
-              View Landing Page
+              View About Us
             </Button>
           </Col>
           <Col sm="6">
-            <Link to="auth">
+            <Link to="profile-page">
               <img
                 alt="..."
                 className="img-raised"
@@ -55,10 +55,10 @@ export default function Examples() {
             <Button
               className="btn-simple btn-round"
               color="primary"
-              to="auth"
+              to="profile-page"
               tag={Link}
             >
-              View Profile Page
+              View Profile
             </Button>
           </Col>
         </Row>
