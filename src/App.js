@@ -7,8 +7,9 @@ import './App.css';
 import LandingPage from './components/landed';
 import Display from './display';
 import Auth from './components/auth';
-import Layout from './components/layout';
+// import Layout from './components/layout';
 import Index from './components/Index';
+import ProfilePage from './components/ProfilePage';
 
 function App() {
   return (
