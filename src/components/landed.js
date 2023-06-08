@@ -139,7 +139,7 @@ export default function LandingPage() {
                 <img
                   alt="..."
                   className="img-fluid"
-                  src={require("../assets/img/etherum.png")}
+                  src={require("../assets/img/ripp.png")}
                 />
               </Col>
             </Row>
@@ -436,7 +436,7 @@ export default function LandingPage() {
                     <img
                       alt="..."
                       className="img-center img-fluid"
-                      src={require("../assets/img/ripp.png")}
+                      src={require("../assets/img/etherum.png")}
                     />
                   </CardHeader>
                   <CardBody>

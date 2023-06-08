@@ -182,7 +182,7 @@ export default function IndexNavbar() {
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/landing">
                   <i className="tim-icons icon-image-02" />
-                  About Us
+                  Pricing
                 </DropdownItem>
                 {/* <DropdownItem tag={Link} to="/profile-page">
                   <i className="tim-icons icon-single-02" />

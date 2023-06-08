@@ -84,7 +84,7 @@ export default function JavaScript() {
                 The Ala Moana Hotel
               </h1>
               <p className="text-white mt-4">
-                Conference rooms packed with leading speakers and Ballroom to meet old friends and new ones.
+                No better place than in Hawaii.  Conference rooms packed with leading speakers and Ballroom to meet old friends and new ones.
               </p>
               <Button
                 className="mt-4"
