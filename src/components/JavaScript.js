@@ -76,24 +76,22 @@ export default function JavaScript() {
       <div className="section">
         <Container>
           <div className="title">
-            <h3>Carousel</h3>
+            <h3>The Venue</h3>
           </div>
           <Row className="justify-content-between align-items-center">
             <Col className="mb-5 mb-lg-0" lg="5">
               <h1 className="text-white font-weight-light">
-                Bootstrap carousel
+                The Ala Moana Hotel
               </h1>
               <p className="text-white mt-4">
-                Black Design comes with three pre-built pages to help you get
-                started faster. You can change the text and images and you're
-                good to go.
+                Conference rooms packed with leading speakers and Ballroom to meet old friends and new ones.
               </p>
               <Button
                 className="mt-4"
                 color="warning"
                 href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/alert"
               >
-                See all components
+                See the hotel
               </Button>
             </Col>
             <Col lg="6">

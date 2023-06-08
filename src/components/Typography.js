@@ -146,11 +146,11 @@ export default function Typography() {
         </div> */}
         <div className="space-50" />
         <div id="images">
-          <h3 className="mb-5">Images</h3>
+          <h3 className="mb-5">The Speakers</h3>
           <Row>
             <Col sm="3" xs="6">
               <small className="d-block text-uppercase font-weight-bold mb-4">
-                Image
+                Speaker Agile
               </small>
               <img
                 alt="..."
@@ -161,7 +161,7 @@ export default function Typography() {
             </Col>
             <Col sm="3" xs="6">
               <small className="d-block text-uppercase font-weight-bold mb-4">
-                Circle Image
+                Speaker PM
               </small>
               <img
                 alt="..."
@@ -172,7 +172,7 @@ export default function Typography() {
             </Col>
             <Col className="mt-5 mt-sm-0" sm="3" xs="6">
               <small className="d-block text-uppercase font-weight-bold mb-4">
-                Raised
+                Speaker Leader
               </small>
               <img
                 alt="..."
@@ -183,7 +183,7 @@ export default function Typography() {
             </Col>
             <Col className="mt-5 mt-sm-0" sm="3" xs="6">
               <small className="d-block text-uppercase font-weight-bold mb-4">
-                Circle Raised
+                Speaker Expert
               </small>
               <img
                 alt="..."

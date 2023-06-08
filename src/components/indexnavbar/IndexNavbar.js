@@ -169,7 +169,7 @@ export default function IndexNavbar() {
                 onClick={(e) => e.preventDefault()}
               >
                 <i className="fa fa-cogs d-lg-none d-xl-none" />
-                Getting started
+                Info
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
                 {/* <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
@@ -197,7 +197,7 @@ export default function IndexNavbar() {
                 target="_blank"
                 href="https://react-python-frontend.onrender.com/"
               >
-                <i className="tim-icons icon-spaceship" /> Main
+                <i className="tim-icons icon-spaceship" /> Sign Up
               </Button>
             </NavItem>
             {/* <NavItem>
