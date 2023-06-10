@@ -30,7 +30,7 @@ import Header from "./header/header";
 // import Notifications from "../views/IndexSections/Notifications.js";
 import Typography from "./Typography.js";
 import JavaScript from "./JavaScript.js";
-// import NucleoIcons from "../views/IndexSections/NucleoIcons.js";
+import NucleoIcons from "./NucleoIcons.js";
 import Signup from "./Signup.js";
 import Examples from "./Examples.js";
 // import Download from "../views/IndexSections/Download.js";
@@ -57,7 +57,7 @@ export default function Index() {
           <Typography /> */}
           <JavaScript />
           <Typography />
-          {/* <NucleoIcons /> */}
+          <NucleoIcons />
           <Examples />
           <Signup />
           {/* <Download /> */}
