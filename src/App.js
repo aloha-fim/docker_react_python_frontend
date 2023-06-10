@@ -10,6 +10,8 @@ import Auth from './components/auth';
 // import Layout from './components/layout';
 import Index from './components/Index';
 import ProfilePage from './components/ProfilePage';
+import HotelPage from './components/HotelPage';
+import SpeakerPage from './components/SpeakerPage';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="landing" element={<LandingPage />} />
           <Route path="profile-page" element={<ProfilePage />} />
           {/* </Route> */}
+          <Route path="venue" element={<HotelPage />} />
+          <Route path="speaker" element={<SpeakerPage />} />
           <Route path="auth" element={<Auth />} />
           <Route path="display" element={<Display />} />
         </Routes>
