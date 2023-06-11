@@ -19,6 +19,7 @@ import React from "react";
 import classnames from "classnames";
 // react plugin used to create datetimepicker
 import ReactDatetime from "react-datetime";
+import { Link } from "react-router-dom";
 
 // reactstrap components
 import {
@@ -84,12 +85,14 @@ export default function JavaScript() {
                 The Ala Moana Hotel
               </h1>
               <p className="text-white mt-4">
-                No better place than in Hawaii.  Conference rooms packed with leading speakers and Ballroom to meet old friends and new ones.
+                There is no better place than in Hawaii.  Leading speakers packing an audience in the Conference Rooms and a time to meet old friends and new ones in the Ballroom.
               </p>
               <Button
                 className="mt-4"
                 color="warning"
-                href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/alert"
+                // href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/alert"
+                tag={Link} 
+                to="/venue"
               >
                 See the hotel
               </Button>

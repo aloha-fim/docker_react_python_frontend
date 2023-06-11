@@ -16,6 +16,7 @@
 
 */
 import React from "react";
+import { Link } from "react-router-dom";
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 
@@ -26,21 +27,23 @@ export default function NucleoIcons() {
       <Container>
         <Row className="justify-content-center">
           <Col lg="8" md="12">
-            <h2 className="title">Kamaaina</h2>
+            <h2 className="title">Networking</h2>
             <h4 className="description">
-              Hawaiian Networking• Meet the ohana and see what everyone does on the island.
+              PMI in Hawaii • Meet the ohana and what they do on island.
             </h4>
             <div className="btn-wrapper">
               <Button
                 className="btn-round"
                 color="primary"
-                href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons"
-                rel="noopener noreferrer"
-                target="_blank"
+                // href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons"
+                // rel="noopener noreferrer"
+                // target="_blank"
+                tag={Link} 
+                to="/profile-page"
               >
-                View Demo Icons
+                View a Profile
               </Button>
-              <Button
+              {/* <Button
                 className="btn-simple btn-round"
                 color="primary"
                 href="https://nucleoapp.com/?ref=1712"
@@ -49,7 +52,7 @@ export default function NucleoIcons() {
                 target="_blank"
               >
                 View All Icons
-              </Button>
+              </Button> */}
             </div>
           </Col>
         </Row>
@@ -76,7 +79,7 @@ export default function NucleoIcons() {
               <i className="icon tim-icons icon-wallet-43" />
             </div>
             <span className="blur-hidden h5 text-primary">
-              Eplore all the 21.000+ Nucleo Icons
+              Explore 2,000 of us on island
             </span>
           </a>
         </div>

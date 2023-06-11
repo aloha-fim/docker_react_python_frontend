@@ -16,8 +16,11 @@
 
 */
 import React from "react";
+import { Link } from "react-router-dom";
+
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
+
 
 export default function Typography() {
   return (
@@ -152,12 +155,14 @@ export default function Typography() {
               <small className="d-block text-uppercase font-weight-bold mb-4">
                 Speaker Agile
               </small>
+              <Link to="speaker">
               <img
                 alt="..."
                 className="img-fluid rounded shadow"
                 src={require("../assets/img/ryan.jpg")}
                 style={{ width: "150px" }}
               />
+              </Link>
             </Col>
             <Col sm="3" xs="6">
               <small className="d-block text-uppercase font-weight-bold mb-4">

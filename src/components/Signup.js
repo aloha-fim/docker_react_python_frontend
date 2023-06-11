@@ -57,7 +57,7 @@ export default function Signup() {
               <span className="text-white">to join</span>
             </h3>
             <p className="text-white mb-3">
-              PDD 2023 will be an exciting event with lots of learning and networking.
+              PDD 2023 will be an exciting event with a focus on learning and networking.
             </p>
             {/* <div className="btn-wrapper">
               <Button color="primary" to="auth" tag={Link}>
