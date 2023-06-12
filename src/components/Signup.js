@@ -15,9 +15,12 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import classnames from "classnames";
-import { Link } from "react-router-dom";
+import { API } from '../api-service';
+import { useCookies } from 'react-cookie';
+// import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 // reactstrap components
 import {
   Button,
@@ -40,9 +43,45 @@ import {
 } from "reactstrap";
 
 export default function Signup() {
-  const [fullNameFocus, setFullNameFocus] = React.useState(false);
-  const [emailFocus, setEmailFocus] = React.useState(false);
-  const [passwordFocus, setPasswordFocus] = React.useState(false);
+
+  const [ username, setUsername ] = useState('');
+  const [ password, setPassword ] = useState('');
+  const [ isLoginView, setIsLoginView ] = useState(true);
+
+  const [access_token, setToken] = useCookies(['access_token']);
+
+  const navigate = useNavigate();
+
+  useEffect( () => {
+    console.log(access_token);
+    //if(access_token['access_token']) window.location.href = '/display';
+    if(access_token['access_token']) setTimeout(() => {navigate('/display', { replace:true });}, 3000);
+    document.body.classList.toggle("register-page");
+    document.documentElement.addEventListener("mousemove", followCursor);
+    // Specify how to clean up after this effect:
+    return function cleanup() {
+       document.body.classList.toggle("register-page");
+       document.documentElement.removeEventListener("mousemove", followCursor);
+    };
+}, [access_token])
+
+  const loginClicked = () => {
+      API.loginUser({username, password}) 
+          .then( resp => setToken('access_token', resp.access_token))
+          .catch( error => console.log(error))
+  }
+
+  const registerClicked = () => {
+      API.registerUser({username, password}) 
+          .then( () => loginClicked())
+          .catch( error => console.log(error))
+  }
+
+  const isDisabled = username.length === 0 || password.length === 0;
+  
+  // const [fullNameFocus, setFullNameFocus] = React.useState(false);
+  // const [emailFocus, setEmailFocus] = React.useState(false);
+  // const [passwordFocus, setPasswordFocus] = React.useState(false);
   return (
     <div className="section section-signup">
       <Container>
@@ -87,13 +126,16 @@ export default function Signup() {
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
-                      placeholder="Full Name"
+                      placeholder="username"
+                      id="username"
                       type="text"
-                      onFocus={(e) => setFullNameFocus(true)}
-                      onBlur={(e) => setFullNameFocus(false)}
+                      value={username}
+                      onChange={ (e) => setUsername(e.target.value)}
+                      // onFocus={(e) => setFullNameFocus(true)}
+                      // onBlur={(e) => setFullNameFocus(false)}
                     />
                   </InputGroup>
-                  <InputGroup
+                  {/* <InputGroup
                     className={classnames({
                       "input-group-focus": emailFocus
                     })}
@@ -109,7 +151,7 @@ export default function Signup() {
                       onFocus={(e) => setEmailFocus(true)}
                       onBlur={(e) => setEmailFocus(false)}
                     />
-                  </InputGroup>
+                  </InputGroup> */}
                   <InputGroup
                     className={classnames({
                       "input-group-focus": passwordFocus
@@ -121,10 +163,13 @@ export default function Signup() {
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
-                      placeholder="Password"
-                      type="text"
-                      onFocus={(e) => setPasswordFocus(true)}
-                      onBlur={(e) => setPasswordFocus(false)}
+                      id="password"
+                      placeholder="password"
+                      type="password"
+                      value={password}
+                      onChange={ (e) => setPassword(e.target.value)}
+                      // onFocus={(e) => setPasswordFocus(true)}
+                      // onBlur={(e) => setPasswordFocus(false)}
                     />
                   </InputGroup>
                   <FormGroup check className="text-left">
@@ -140,9 +185,15 @@ export default function Signup() {
                 </Form>
               </CardBody>
               <CardFooter>
-                <Button className="btn-round" color="primary" size="lg">
+
+                {isLoginView ? 
+                  <Button className="btn-round" color="primary" size="lg" onClick={registerClicked} disabled={isDisabled}>Register</Button>
+                  :
+                  <Button className="btn-round" color="primary" size="lg" onClick={loginClicked} disabled={isDisabled}>Login</Button>
+                } 
+                {/* <Button className="btn-round" color="primary" size="lg">
                   Get Started
-                </Button>
+                </Button> */}
               </CardFooter>
             </Card>
           </Col>
