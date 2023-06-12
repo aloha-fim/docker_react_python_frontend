@@ -57,11 +57,9 @@ export default function Signup() {
     //if(access_token['access_token']) window.location.href = '/display';
     if(access_token['access_token']) setTimeout(() => {navigate('/display', { replace:true });}, 3000);
     document.body.classList.toggle("register-page");
-    document.documentElement.addEventListener("mousemove", followCursor);
     // Specify how to clean up after this effect:
     return function cleanup() {
        document.body.classList.toggle("register-page");
-       document.documentElement.removeEventListener("mousemove", followCursor);
     };
 }, [access_token])
 
@@ -117,7 +115,7 @@ export default function Signup() {
                 <Form className="form">
                   <InputGroup
                     className={classnames({
-                      "input-group-focus": fullNameFocus
+                      "input-group-focus": username
                     })}
                   >
                     <InputGroupAddon addonType="prepend">
@@ -154,7 +152,7 @@ export default function Signup() {
                   </InputGroup> */}
                   <InputGroup
                     className={classnames({
-                      "input-group-focus": passwordFocus
+                      "input-group-focus": password
                     })}
                   >
                     <InputGroupAddon addonType="prepend">
