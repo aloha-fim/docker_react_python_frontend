@@ -158,7 +158,7 @@ export default function Typography() {
               <Link to="speaker">
               <img
                 alt="..."
-                className="img-fluid rounded shadow"
+                className="img-fluid rounded-circle shadow"
                 src={require("../assets/img/ryan.jpg")}
                 style={{ width: "150px" }}
               />
@@ -181,7 +181,7 @@ export default function Typography() {
               </small>
               <img
                 alt="..."
-                className="img-fluid rounded shadow-lg"
+                className="img-fluid rounded-circle shadow-lg"
                 src={require("../assets/img/lora.jpg")}
                 style={{ width: "150px" }}
               />
