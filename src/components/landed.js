@@ -269,7 +269,7 @@ export default function LandingPage() {
           </section>
         </section> */}
         
-        <section className="section section-lg section-safe">
+        {/* <section className="section section-lg section-safe">
           <img
             alt="..."
             className="path"
@@ -287,13 +287,13 @@ export default function LandingPage() {
             className="path2"
             src={require("../assets/img/path2.png")}
           />
-        </section>
+        </section> */}
         <section className="section section-lg section-coins">
-          <img
+          {/* <img
             alt="..."
             className="path"
             src={require("../assets/img/path3.png")}
-          />
+          /> */}
           <Container>
             <Row>
               <Col md="4">
@@ -318,16 +318,14 @@ export default function LandingPage() {
                     <Row>
                       <Col className="text-center" md="12">
                         <h4 className="text-uppercase">Conference</h4>
-                        <span>Plan</span>
+                        <span>$200</span>
                         <hr className="line-primary" />
                       </Col>
                     </Row>
                     <Row>
                       <ListGroup>
-                        <ListGroupItem>10 speakers</ListGroupItem>
                         <ListGroupItem>300 participants</ListGroupItem>
                         <ListGroupItem>Live Venue Conference</ListGroupItem>
-                        <ListGroupItem>$200</ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
@@ -351,7 +349,7 @@ export default function LandingPage() {
                     <Row>
                       <Col className="text-center" md="12">
                         <h4 className="text-uppercase">Meetups</h4>
-                        <span>Plan</span>
+                        <span>$5</span>
                         <hr className="line-success" />
                       </Col>
                     </Row>
@@ -359,7 +357,6 @@ export default function LandingPage() {
                       <ListGroup>
                         <ListGroupItem>5 participants</ListGroupItem>
                         <ListGroupItem>Lunch get together</ListGroupItem>
-                        <ListGroupItem>$5</ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
@@ -383,7 +380,7 @@ export default function LandingPage() {
                     <Row>
                       <Col className="text-center" md="12">
                         <h4 className="text-uppercase">Besties</h4>
-                        <span>Plan</span>
+                        <span>$5</span>
                         <hr className="line-info" />
                       </Col>
                     </Row>
@@ -391,7 +388,6 @@ export default function LandingPage() {
                       <ListGroup>
                         <ListGroupItem>1 participant</ListGroupItem>
                         <ListGroupItem>Meetup</ListGroupItem>
-                        <ListGroupItem>$5</ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
@@ -406,7 +402,7 @@ export default function LandingPage() {
           </Container>
         </section>
         <section className="section section-lg">
-          <img
+          {/* <img
             alt="..."
             className="path"
             src={require("../assets/img/path4.png")}
@@ -420,7 +416,7 @@ export default function LandingPage() {
             alt="..."
             className="path3"
             src={require("../assets/img/path2.png")}
-          />
+          /> */}
           <Container>
             <Row className="justify-content-center">
               <Col lg="12">
