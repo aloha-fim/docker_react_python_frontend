@@ -51,7 +51,7 @@ export default function LandingPage() {
     <>
       {/* <ExamplesNavbar /> */}
       <div className="wrapper">
-        <div className="page-header">
+      {/*  <div className="page-header">
           <img
             alt="..."
             className="path"
@@ -144,8 +144,8 @@ export default function LandingPage() {
               </Col>
             </Row>
           </div>
-        </div>
-        <section className="section section-lg">
+        </div> */}
+        {/* <section className="section section-lg">
           <section className="section">
             <img
               alt="..."
@@ -267,69 +267,8 @@ export default function LandingPage() {
               </Row>
             </Container>
           </section>
-        </section>
-        <section className="section section-lg">
-          <img
-            alt="..."
-            className="path"
-            src={require("../assets/img/path4.png")}
-          />
-          <img
-            alt="..."
-            className="path2"
-            src={require("../assets/img/path5.png")}
-          />
-          <img
-            alt="..."
-            className="path3"
-            src={require("../assets/img/path2.png")}
-          />
-          <Container>
-            <Row className="justify-content-center">
-              <Col lg="12">
-                <h1 className="text-center">Your best benefit</h1>
-                <Row className="row-grid justify-content-center">
-                  <Col lg="3">
-                    <div className="info">
-                      <div className="icon icon-primary">
-                        <i className="tim-icons icon-money-coins" />
-                      </div>
-                      <h4 className="info-title">Self Service</h4>
-                      <hr className="line-primary" />
-                      <p>
-                        Everything under the hood.
-                      </p>
-                    </div>
-                  </Col>
-                  <Col lg="3">
-                    <div className="info">
-                      <div className="icon icon-warning">
-                        <i className="tim-icons icon-chart-pie-36" />
-                      </div>
-                      <h4 className="info-title">Higher Income</h4>
-                      <hr className="line-warning" />
-                      <p>
-                        Data driven performance 
-                      </p>
-                    </div>
-                  </Col>
-                  <Col lg="3">
-                    <div className="info">
-                      <div className="icon icon-success">
-                        <i className="tim-icons icon-single-02" />
-                      </div>
-                      <h4 className="info-title">Verified People</h4>
-                      <hr className="line-success" />
-                      <p>
-                        Speaker performance
-                      </p>
-                    </div>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Container>
-        </section>
+        </section> */}
+        
         <section className="section section-lg section-safe">
           <img
             alt="..."
@@ -361,7 +300,7 @@ export default function LandingPage() {
                 <hr className="line-info" />
                 <h1>
                   Choose the event{" "}
-                  <span className="text-info">that your life needs</span>
+                  <span className="text-info">your life with lead</span>
                 </h1>
               </Col>
             </Row>
@@ -385,9 +324,10 @@ export default function LandingPage() {
                     </Row>
                     <Row>
                       <ListGroup>
-                        <ListGroupItem>50 messages</ListGroupItem>
-                        <ListGroupItem>100 emails</ListGroupItem>
-                        <ListGroupItem>24/7 Support</ListGroupItem>
+                        <ListGroupItem>10 speakers</ListGroupItem>
+                        <ListGroupItem>300 participants</ListGroupItem>
+                        <ListGroupItem>Live Venue Conference</ListGroupItem>
+                        <ListGroupItem>$200</ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
@@ -417,9 +357,9 @@ export default function LandingPage() {
                     </Row>
                     <Row>
                       <ListGroup>
-                        <ListGroupItem>150 messages</ListGroupItem>
-                        <ListGroupItem>1000 emails</ListGroupItem>
-                        <ListGroupItem>24/7 Support</ListGroupItem>
+                        <ListGroupItem>5 participants</ListGroupItem>
+                        <ListGroupItem>Lunch get together</ListGroupItem>
+                        <ListGroupItem>$5</ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
@@ -442,16 +382,16 @@ export default function LandingPage() {
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase">Leads</h4>
+                        <h4 className="text-uppercase">Besties</h4>
                         <span>Plan</span>
                         <hr className="line-info" />
                       </Col>
                     </Row>
                     <Row>
                       <ListGroup>
-                        <ListGroupItem>350 messages</ListGroupItem>
-                        <ListGroupItem>10K emails</ListGroupItem>
-                        <ListGroupItem>24/7 Support</ListGroupItem>
+                        <ListGroupItem>1 participant</ListGroupItem>
+                        <ListGroupItem>Meetup</ListGroupItem>
+                        <ListGroupItem>$5</ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
@@ -461,6 +401,68 @@ export default function LandingPage() {
                     </Button>
                   </CardFooter>
                 </Card>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <section className="section section-lg">
+          <img
+            alt="..."
+            className="path"
+            src={require("../assets/img/path4.png")}
+          />
+          <img
+            alt="..."
+            className="path2"
+            src={require("../assets/img/path5.png")}
+          />
+          <img
+            alt="..."
+            className="path3"
+            src={require("../assets/img/path2.png")}
+          />
+          <Container>
+            <Row className="justify-content-center">
+              <Col lg="12">
+                <h1 className="text-center">To your benefit</h1>
+                <Row className="row-grid justify-content-center">
+                  <Col lg="3">
+                    <div className="info">
+                      <div className="icon icon-primary">
+                        <i className="tim-icons icon-money-coins" />
+                      </div>
+                      <h4 className="info-title">Verified People</h4>
+                      <hr className="line-primary" />
+                      <p>
+                        To increase your network.
+                      </p>
+                    </div>
+                  </Col>
+                  <Col lg="3">
+                    <div className="info">
+                      <div className="icon icon-warning">
+                        <i className="tim-icons icon-chart-pie-36" />
+                      </div>
+                      <h4 className="info-title">Higher Relationship</h4>
+                      <hr className="line-warning" />
+                      <p>
+                        To increase your performance. 
+                      </p>
+                    </div>
+                  </Col>
+                  <Col lg="3">
+                    <div className="info">
+                      <div className="icon icon-success">
+                        <i className="tim-icons icon-single-02" />
+                      </div>
+                      <h4 className="info-title">Defined Outcome</h4>
+                      <hr className="line-success" />
+                      <p>
+                        To realize ideas.
+                      </p>
+                    </div>
+                  </Col>
+                </Row>
               </Col>
             </Row>
           </Container>
