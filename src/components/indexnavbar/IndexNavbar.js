@@ -202,8 +202,10 @@ export default function IndexNavbar() {
               <Button
                 className="nav-link d-none d-lg-block"
                 color="primary"
-                target="_blank"
-                href="https://react-python-frontend.onrender.com/"
+                // target="_blank"
+                // href="https://react-python-frontend.onrender.com/"
+                tag={Link} 
+                to="/auth"
               >
                 <i className="tim-icons icon-spaceship" /> Sign Up
               </Button>
