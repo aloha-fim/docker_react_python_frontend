@@ -107,10 +107,10 @@ export default function SpeakerPage() {
           <Container className="align-items-center">
             <Row>
               <Col lg="6" md="6">
-                <h1 className="profile-title text-left">Mike Scheinder</h1>
+                <h1 className="profile-title text-left">Yovo Stefanovich</h1>
                 <h5 className="text-on-back">01</h5>
                 <p className="profile-description">
-                  Speaker.
+                  Former President PMI Hawaii
                 </p>
                 <div className="btn-wrapper profile pt-3">
                   <Button
@@ -159,7 +159,7 @@ export default function SpeakerPage() {
                       className="img-center img-fluid rounded-circle"
                       src={require("../assets/img/mike.jpg")}
                     />
-                    <h4 className="title">Transactions</h4>
+                    <h4 className="title">Hits</h4>
                   </CardHeader>
                   <CardBody>
                     <Nav
@@ -177,7 +177,7 @@ export default function SpeakerPage() {
                           }}
                           href="#pablo"
                         >
-                          Wallet
+                          Rating
                         </NavLink>
                       </NavItem>
                       <NavItem>
@@ -311,7 +311,7 @@ export default function SpeakerPage() {
                 <h1 className="profile-title text-left">Projects</h1>
                 <h5 className="text-on-back">02</h5>
                 <p className="profile-description text-left">
-                  An artist.
+                  Networking.
                 </p>
                 <div className="btn-wrapper pt-3">
                   <Button
@@ -410,9 +410,9 @@ export default function SpeakerPage() {
                   <div className="description">
                     <h4 className="info-title">Find us at the office</h4>
                     <p>
-                      Bld Mihail Kogalniceanu, nr. 8, <br />
-                      7652 Bucharest, <br />
-                      Romania
+                      First Hawaiian Bank, <br />
+                      Honolulu, <br />
+                      Hawaii
                     </p>
                   </div>
                 </div>
@@ -423,9 +423,9 @@ export default function SpeakerPage() {
                   <div className="description">
                     <h4 className="info-title">Give us a ring</h4>
                     <p>
-                      Michael Jordan <br />
+                      Yovo Stephanovich <br />
                       +40 762 321 762 <br />
-                      Mon - Fri, 8:00-22:00
+                      
                     </p>
                   </div>
                 </div>
