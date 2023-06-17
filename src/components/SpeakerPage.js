@@ -157,7 +157,7 @@ export default function SpeakerPage() {
                     <img
                       alt="..."
                       className="img-center img-fluid rounded-circle"
-                      src={require("../assets/img/mike.jpg")}
+                      src={require("../assets/img/yovo.jpg")}
                     />
                     <h4 className="title">Hits</h4>
                   </CardHeader>
@@ -313,7 +313,7 @@ export default function SpeakerPage() {
                 <p className="profile-description text-left">
                   Networking.
                 </p>
-                <div className="btn-wrapper pt-3">
+                {/* <div className="btn-wrapper pt-3">
                   <Button
                     className="btn-simple"
                     color="primary"
@@ -330,7 +330,7 @@ export default function SpeakerPage() {
                   >
                     <i className="tim-icons icon-bulb-63" /> Check it!
                   </Button>
-                </div>
+                </div> */}
               </Col>
             </Row>
           </Container>
@@ -356,7 +356,7 @@ export default function SpeakerPage() {
                         <Col md="6">
                           <FormGroup>
                             <label>Email address</label>
-                            <Input placeholder="mike@email.com" type="email" />
+                            <Input type="email" />
                           </FormGroup>
                         </Col>
                       </Row>
@@ -364,13 +364,13 @@ export default function SpeakerPage() {
                         <Col md="6">
                           <FormGroup>
                             <label>Phone</label>
-                            <Input defaultValue="001-12321345" type="text" />
+                            <Input type="text" />
                           </FormGroup>
                         </Col>
                         <Col md="6">
                           <FormGroup>
                             <label>Company</label>
-                            <Input defaultValue="CreativeTim" type="text" />
+                            <Input type="text" />
                           </FormGroup>
                         </Col>
                       </Row>
@@ -378,7 +378,7 @@ export default function SpeakerPage() {
                         <Col md="12">
                           <FormGroup>
                             <label>Message</label>
-                            <Input placeholder="Hello there!" type="text" />
+                            <Input type="text" />
                           </FormGroup>
                         </Col>
                       </Row>
