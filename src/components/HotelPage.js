@@ -93,7 +93,7 @@ export default function HotelPage() {
     <>
       {/* <ExamplesNavbar /> */}
       <div className="wrapper">
-        <div className="page-header">
+        {/* <div className="page-header">
           <img
             alt="..."
             className="dots"
@@ -298,7 +298,7 @@ export default function HotelPage() {
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
         <div className="section">
           <Container>
             <Row className="justify-content-between">
@@ -308,16 +308,12 @@ export default function HotelPage() {
                 </Row>
               </Col>
               <Col md="5">
-                <h1 className="profile-title text-left">Projects</h1>
-                <h5 className="text-on-back">02</h5>
+                <h1 className="profile-title text-left">Ala Moana Hotel</h1>
+                <h5 className="text-on-back">01</h5>
                 <p className="profile-description text-left">
-                  An artist of considerable range, Ryan — the name taken by
-                  Melbourne-raised, Brooklyn-based Nick Murphy — writes,
-                  performs and records all of his own music, giving it a warm,
-                  intimate feel with a solid groove structure. An artist of
-                  considerable range.
+                  The hotel.
                 </p>
-                <div className="btn-wrapper pt-3">
+                {/* <div className="btn-wrapper pt-3">
                   <Button
                     className="btn-simple"
                     color="primary"
@@ -334,12 +330,12 @@ export default function HotelPage() {
                   >
                     <i className="tim-icons icon-bulb-63" /> Check it!
                   </Button>
-                </div>
+                </div> */}
               </Col>
             </Row>
           </Container>
         </div>
-        <section className="section">
+        {/* <section className="section">
           <Container>
             <Row>
               <Col md="6">
@@ -436,7 +432,7 @@ export default function HotelPage() {
               </Col>
             </Row>
           </Container>
-        </section>
+        </section> */}
         {/* <Footer /> */}
       </div>
     </>
