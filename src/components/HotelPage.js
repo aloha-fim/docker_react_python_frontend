@@ -51,17 +51,17 @@ const carouselItems = [
   {
     src: require("../assets/img/denys.jpg"),
     altText: "Slide 1",
-    caption: "Big City Life, United States"
+    caption: "Hawaii, best place to hold a conference"
   },
   {
     src: require("../assets/img/fabien-bazanegue.jpg"),
     altText: "Slide 2",
-    caption: "Somewhere Beyond, United States"
+    caption: "In Waikiki"
   },
   {
     src: require("../assets/img/mark-finn.jpg"),
     altText: "Slide 3",
-    caption: "Stocks, United States"
+    caption: "Networking"
   }
 ];
 
@@ -335,6 +335,79 @@ export default function HotelPage() {
             </Row>
           </Container>
         </div>
+        <section className="section">
+        <Container>
+            <Row className="justify-content-between">
+              <Col md="6">
+                <Row className="justify-content-between align-items-center">
+                  <UncontrolledCarousel items={carouselItems} />
+                </Row>
+              </Col>
+              <Col md="5">
+                <h1 className="profile-title text-left">Ala Moana Hotel</h1>
+                <h5 className="text-on-back">02</h5>
+                <p className="profile-description text-left">
+                  The conference rooms.
+                </p>
+                {/* <div className="btn-wrapper pt-3">
+                  <Button
+                    className="btn-simple"
+                    color="primary"
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    <i className="tim-icons icon-book-bookmark" /> Bookmark
+                  </Button>
+                  <Button
+                    className="btn-simple"
+                    color="info"
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    <i className="tim-icons icon-bulb-63" /> Check it!
+                  </Button>
+                </div> */}
+              </Col>
+            </Row>
+          </Container>
+          </section>
+          <section className="section">
+          <Container>
+            <Row className="justify-content-between">
+              <Col md="6">
+                <Row className="justify-content-between align-items-center">
+                  <UncontrolledCarousel items={carouselItems} />
+                </Row>
+              </Col>
+              <Col md="5">
+                <h1 className="profile-title text-left">Ala Moana Hotel</h1>
+                <h5 className="text-on-back">03</h5>
+                <p className="profile-description text-left">
+                  The ballroom.
+                </p>
+                {/* <div className="btn-wrapper pt-3">
+                  <Button
+                    className="btn-simple"
+                    color="primary"
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    <i className="tim-icons icon-book-bookmark" /> Bookmark
+                  </Button>
+                  <Button
+                    className="btn-simple"
+                    color="info"
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    <i className="tim-icons icon-bulb-63" /> Check it!
+                  </Button>
+                </div> */}
+              </Col>
+            </Row>
+          </Container>
+          </section>
+
         {/* <section className="section">
           <Container>
             <Row>
