@@ -422,15 +422,27 @@ export default function LandingPage() {
               <Col lg="12">
                 <h1 className="text-center">To your benefit</h1>
                 <Row className="row-grid justify-content-center">
+                <Col lg="3">
+                    <div className="info">
+                      <div className="icon icon-success">
+                        <i className="tim-icons icon-single-02" />
+                      </div>
+                      <h4 className="info-title">Inception to new Ideas</h4>
+                      <hr className="line-success" />
+                      <p>
+                        Meet new people.
+                      </p>
+                    </div>
+                  </Col>
                   <Col lg="3">
                     <div className="info">
                       <div className="icon icon-primary">
                         <i className="tim-icons icon-money-coins" />
                       </div>
-                      <h4 className="info-title">Verified People</h4>
+                      <h4 className="info-title">Higher Relationships </h4>
                       <hr className="line-primary" />
                       <p>
-                        To increase your network.
+                        Make new connections.
                       </p>
                     </div>
                   </Col>
@@ -439,22 +451,10 @@ export default function LandingPage() {
                       <div className="icon icon-warning">
                         <i className="tim-icons icon-chart-pie-36" />
                       </div>
-                      <h4 className="info-title">Higher Relationship</h4>
+                      <h4 className="info-title">Verified Outcome</h4>
                       <hr className="line-warning" />
                       <p>
-                        To increase your performance. 
-                      </p>
-                    </div>
-                  </Col>
-                  <Col lg="3">
-                    <div className="info">
-                      <div className="icon icon-success">
-                        <i className="tim-icons icon-single-02" />
-                      </div>
-                      <h4 className="info-title">Defined Outcome</h4>
-                      <hr className="line-success" />
-                      <p>
-                        To realize ideas.
+                        Grow your network. 
                       </p>
                     </div>
                   </Col>

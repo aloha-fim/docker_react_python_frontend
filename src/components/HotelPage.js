@@ -311,7 +311,7 @@ export default function HotelPage() {
                 <h1 className="profile-title text-left">Ala Moana Hotel</h1>
                 <h5 className="text-on-back">01</h5>
                 <p className="profile-description text-left">
-                  The hotel.
+                  Meet new People. The hotel.
                 </p>
                 {/* <div className="btn-wrapper pt-3">
                   <Button
@@ -347,7 +347,7 @@ export default function HotelPage() {
                 <h1 className="profile-title text-left">Ala Moana Hotel</h1>
                 <h5 className="text-on-back">02</h5>
                 <p className="profile-description text-left">
-                  The conference rooms.
+                  Make new connections. The conference rooms.
                 </p>
                 {/* <div className="btn-wrapper pt-3">
                   <Button
@@ -383,7 +383,7 @@ export default function HotelPage() {
                 <h1 className="profile-title text-left">Ala Moana Hotel</h1>
                 <h5 className="text-on-back">03</h5>
                 <p className="profile-description text-left">
-                  The ballroom.
+                  Grow your network. The ballroom.
                 </p>
                 {/* <div className="btn-wrapper pt-3">
                   <Button
