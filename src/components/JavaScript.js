@@ -77,7 +77,7 @@ export default function JavaScript() {
       <div className="section">
         <Container>
           <div className="title">
-            <h3>The Venue</h3>
+            <h3>The Conference Venue</h3>
           </div>
           <Row className="justify-content-between align-items-center">
             <Col className="mb-5 mb-lg-0" lg="5">
@@ -85,7 +85,7 @@ export default function JavaScript() {
                 The Ala Moana Hotel
               </h1>
               <p className="text-white mt-4">
-                There is no better place than in Hawaii.  Leading speakers packing an audience in the Conference Rooms and a time to meet old friends and new ones in the Ballroom.
+                Leading speakers in Hawaii with a full audience in the Conference Rooms. A time to meet old friends and new ones in the Ballroom.
               </p>
               <Button
                 className="mt-4"

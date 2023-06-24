@@ -308,10 +308,10 @@ export default function HotelPage() {
                 </Row>
               </Col>
               <Col md="5">
-                <h1 className="profile-title text-left">Ala Moana Hotel</h1>
+                <h1 className="profile-title text-left">The Hotel</h1>
                 <h5 className="text-on-back">01</h5>
                 <p className="profile-description text-left">
-                  Meet new People. The hotel.
+                  Meet new People at the Conference.
                 </p>
                 {/* <div className="btn-wrapper pt-3">
                   <Button
@@ -344,10 +344,10 @@ export default function HotelPage() {
                 </Row>
               </Col>
               <Col md="5">
-                <h1 className="profile-title text-left">Ala Moana Hotel</h1>
+                <h1 className="profile-title text-left">The Conference Rooms</h1>
                 <h5 className="text-on-back">02</h5>
                 <p className="profile-description text-left">
-                  Make new connections. The conference rooms.
+                  Make new connections in the Conference rooms.
                 </p>
                 {/* <div className="btn-wrapper pt-3">
                   <Button
@@ -380,10 +380,10 @@ export default function HotelPage() {
                 </Row>
               </Col>
               <Col md="5">
-                <h1 className="profile-title text-left">Ala Moana Hotel</h1>
+                <h1 className="profile-title text-left">The Ballroom</h1>
                 <h5 className="text-on-back">03</h5>
                 <p className="profile-description text-left">
-                  Grow your network. The ballroom.
+                  Grow your network over food in the Ballroom.
                 </p>
                 {/* <div className="btn-wrapper pt-3">
                   <Button

@@ -29,7 +29,7 @@ export default function NucleoIcons() {
           <Col lg="8" md="12">
             <h2 className="title">Networking</h2>
             <h4 className="description">
-              PMI in Hawaii • Meet the ohana and what they do on island.
+              PMI in Hawaii • Meet the ohana on the island.
             </h4>
             <div className="btn-wrapper">
               <Button
